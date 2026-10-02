@@ -1,0 +1,50 @@
+[
+  {
+    "id": "C01",
+    "kind": "infeasible specification",
+    "passed": true,
+    "reason": "fewer than four allowed words for four distinct messages"
+  },
+  {
+    "id": "C02",
+    "kind": "infeasible specification",
+    "passed": true,
+    "reason": "fewer than four allowed words for four distinct messages"
+  },
+  {
+    "id": "C03",
+    "kind": "inverse mutation",
+    "passed": true,
+    "rejection": "inverse relation failure"
+  },
+  {
+    "id": "C04",
+    "kind": "understated total-error bound",
+    "passed": true,
+    "rejection": "incorrect total-decoder error"
+  },
+  {
+    "id": "C05",
+    "kind": "encoder literal mutation",
+    "passed": true,
+    "rejection": "encoder implementation mismatch"
+  },
+  {
+    "id": "C06",
+    "kind": "understated gate cost",
+    "passed": true,
+    "rejection": "gate cost mismatch"
+  },
+  {
+    "id": "C07",
+    "kind": "deleted frontier witness",
+    "passed": true,
+    "rejection": "incomplete or nonminimal frontier"
+  },
+  {
+    "id": "C08",
+    "kind": "functional but nonminimal cover",
+    "passed": true,
+    "rejection": "claimed cost is not minimal"
+  }
+]

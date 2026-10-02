@@ -1,0 +1,112 @@
+{
+  "case": {
+    "id": "T07",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "01",
+      "02",
+      "10",
+      "20"
+    ],
+    "purpose": "one nonzero ternary symbol, one-bit payload",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 1536,
+  "candidate_source_received_obligations_covered": 15360,
+  "pair_nonexpanding_encoders": 12,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 1,
+      "gates": 8,
+      "products": 3,
+      "connections": 4,
+      "encoder_rows": [
+        1,
+        2
+      ],
+      "decoder_table": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 2,
+        "terms": [
+          {
+            "cube": "*",
+            "outputs": 1
+          },
+          {
+            "cube": "1",
+            "outputs": 3
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "0011",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 0,
+      "gates": 8,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    8
+  ],
+  "histogram": [
+    {
+      "error": 1,
+      "gates": 8,
+      "count": 84
+    },
+    {
+      "error": 1,
+      "gates": 9,
+      "count": 604
+    },
+    {
+      "error": 1,
+      "gates": 10,
+      "count": 722
+    },
+    {
+      "error": 1,
+      "gates": 11,
+      "count": 122
+    },
+    {
+      "error": 1,
+      "gates": 12,
+      "count": 4
+    }
+  ],
+  "distinct_encoder_tables": 12,
+  "distinct_decoder_tables": 448,
+  "cover_dynamic_program_states": 1638,
+  "cpu_seconds": 0.02718718400000003,
+  "wall_seconds": 0.027193151999881593,
+  "peak_rss_kib": 94120
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "X01",
+    "description": "Five-bit fixed codebook with eight three-bit messages; chosen before proof generation as a scaling case whose total-decoder completion space has 2^72 functions.",
+    "q": 2,
+    "n": 5,
+    "k": 3,
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "encoder": ["00100", "01000", "11011", "01010", "10001", "10000", "00011", "10010"],
+    "encoder_witness": [
+      {"cube": "000", "outputs": 4},
+      {"cube": "010", "outputs": 27},
+      {"cube": "0*1", "outputs": 8},
+      {"cube": "10*", "outputs": 16},
+      {"cube": "1*0", "outputs": 1},
+      {"cube": "1*1", "outputs": 16},
+      {"cube": "*1*", "outputs": 2}
+    ],
+    "decoder_witnesses": {
+      "1": [
+        {"cube": "***1*", "outputs": 2},
+        {"cube": "**0*0", "outputs": 1},
+        {"cube": "*00*1", "outputs": 4},
+        {"cube": "*0010", "outputs": 4},
+        {"cube": "10**0", "outputs": 4}
+      ],
+      "2": [
+        {"cube": "***1*", "outputs": 2},
+        {"cube": "**0*0", "outputs": 1},
+        {"cube": "*00**", "outputs": 4}
+      ],
+      "3": [
+        {"cube": "***1*", "outputs": 2},
+        {"cube": "**0*0", "outputs": 1},
+        {"cube": "*00**", "outputs": 4}
+      ]
+    }
+  }
+]

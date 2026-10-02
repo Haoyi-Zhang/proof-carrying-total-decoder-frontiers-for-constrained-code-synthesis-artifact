@@ -1,0 +1,56 @@
+{
+  "passed": 9,
+  "controls": [
+    {
+      "name": "pseudo-domain-projection-collapse",
+      "passed": true,
+      "rejection": "decoder plane at error bound 1 domain mismatch",
+      "static_witness": {
+        "pseudo_domain_rows_locally_legal": 32,
+        "true_codeword": "00100",
+        "required_message": "000",
+        "forged_output": "100"
+      }
+    },
+    {
+      "name": "drop-packing-cell",
+      "passed": true,
+      "rejection": "decoder plane at error bound 1 packing lower bound does not meet witness size"
+    },
+    {
+      "name": "duplicate-packing-cell",
+      "passed": true,
+      "rejection": "decoder plane at error bound 1 packing has duplicate cells"
+    },
+    {
+      "name": "mutate-circuit-cube",
+      "passed": true,
+      "rejection": "decoder plane at error bound 1 attaining circuit violates relation"
+    },
+    {
+      "name": "zero-output-mask",
+      "passed": true,
+      "rejection": "bad term mask"
+    },
+    {
+      "name": "drop-frontier-point",
+      "passed": true,
+      "rejection": "frontier mismatch"
+    },
+    {
+      "name": "alter-encoder-row",
+      "passed": true,
+      "rejection": "encoder row mapping mismatch"
+    },
+    {
+      "name": "understate-minimum",
+      "passed": true,
+      "rejection": "decoder plane at error bound 1 product count mismatch"
+    },
+    {
+      "name": "alter-forced-zero-set",
+      "passed": true,
+      "rejection": "decoder plane at error bound 2 forced-zero set mismatch"
+    }
+  ]
+}

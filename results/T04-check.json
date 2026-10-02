@@ -1,0 +1,16 @@
+{
+  "case": "T04",
+  "accepted": true,
+  "candidate_designs_replayed": 256,
+  "plane_minimality_certificates": 258,
+  "bounded_cover_nodes": 565,
+  "frontier": [
+    [
+      1,
+      7
+    ]
+  ],
+  "cpu_seconds": 0.02892397699999999,
+  "wall_seconds": 0.028924330999871017,
+  "peak_rss_kib": 93992
+}

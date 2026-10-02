@@ -1,0 +1,16 @@
+{
+  "id": "T02",
+  "q": 3,
+  "n": 2,
+  "k": 2,
+  "allowed": [
+    "01",
+    "02",
+    "10",
+    "20"
+  ],
+  "purpose": "off-code received center reaches every message",
+  "radius": 1,
+  "gate_cap": 24,
+  "connection_cap": 48
+}

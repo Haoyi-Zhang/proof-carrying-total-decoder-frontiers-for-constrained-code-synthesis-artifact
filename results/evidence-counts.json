@@ -1,0 +1,49 @@
+{
+  "logical_coverage": {
+    "checker_visible_logical_units": 99897,
+    "components": {
+      "final_lower_bound_replay_visits": 88664,
+      "joint_semantic_received_rows": 3488,
+      "fixed_codebook_planes": 4,
+      "fixed_codebook_cubes": 756,
+      "fixed_codebook_packing_pairs": 37,
+      "exact_plane_certificates": 384,
+      "anchor_full_row_bound_slots": 6144,
+      "encoding_cardinality_assignments": 382,
+      "encoding_relation_bounds": 36,
+      "encoding_correlated_forbidden_tuple_checks": 2
+    },
+    "joint_semantic_received_rows": 3488,
+    "anchor_full_row_bound_slots": 6144,
+    "candidate_source_received_obligations": 837040,
+    "definition": "The checker-visible total sums final lower-bound replay visits, semantic rows, fixed-codebook plane/cube/packing checks, exact plane certificates, the full A01 mapping-row-bound slot product, and small encoding-oracle slots. It is a coverage index, not an executed-call count."
+  },
+  "retained_proof": {
+    "lower_bound_replay_node_visits": 88664,
+    "stored_tree_records": 44524,
+    "exact_plane_certificates": 384,
+    "fixed_codebook_planes": 4,
+    "fixed_codebook_cubes": 756,
+    "fixed_codebook_packing_pairs": 37
+  },
+  "actual_execution": {
+    "all_dpll_generation_search_nodes": 121972,
+    "final_lower_bound_generation_nodes": 88664,
+    "satisfying_witness_generation_nodes": 21472,
+    "earlier_unsat_generation_nodes": 11836,
+    "lower_bound_replay_node_visits": 88664,
+    "anchor_row_output_calls": 4512
+  },
+  "identities": {
+    "dpll_partition": [
+      121972,
+      88664,
+      21472,
+      11836
+    ],
+    "anchor_slots_vs_calls": [
+      6144,
+      4512
+    ]
+  }
+}

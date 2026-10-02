@@ -1,0 +1,127 @@
+{
+  "case": {
+    "id": "B04",
+    "q": 2,
+    "n": 3,
+    "k": 2,
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "100"
+    ],
+    "purpose": "weight at most one",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 6144,
+  "candidate_source_received_obligations_covered": 98304,
+  "pair_nonexpanding_encoders": 0,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 2,
+      "gates": 10,
+      "products": 5,
+      "connections": 5,
+      "encoder_rows": [
+        1,
+        2,
+        4,
+        0
+      ],
+      "decoder_table": [
+        3,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 3,
+        "terms": [
+          {
+            "cube": "00",
+            "outputs": 1
+          },
+          {
+            "cube": "01",
+            "outputs": 2
+          },
+          {
+            "cube": "10",
+            "outputs": 4
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 2,
+        "terms": [
+          {
+            "cube": "0*0",
+            "outputs": 1
+          },
+          {
+            "cube": "*00",
+            "outputs": 2
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 2,
+      "gates": 10,
+      "total_error_of_witness": 2
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    null,
+    10
+  ],
+  "histogram": [
+    {
+      "error": 2,
+      "gates": 10,
+      "count": 6
+    },
+    {
+      "error": 2,
+      "gates": 11,
+      "count": 678
+    },
+    {
+      "error": 2,
+      "gates": 12,
+      "count": 2988
+    },
+    {
+      "error": 2,
+      "gates": 13,
+      "count": 2088
+    },
+    {
+      "error": 2,
+      "gates": 14,
+      "count": 360
+    },
+    {
+      "error": 2,
+      "gates": 15,
+      "count": 24
+    }
+  ],
+  "distinct_encoder_tables": 24,
+  "distinct_decoder_tables": 6144,
+  "cover_dynamic_program_states": 37978,
+  "cpu_seconds": 0.293371599,
+  "wall_seconds": 0.2934166529998947,
+  "peak_rss_kib": 103212
+}

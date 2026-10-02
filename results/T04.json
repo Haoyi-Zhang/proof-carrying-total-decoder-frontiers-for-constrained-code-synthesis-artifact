@@ -1,0 +1,101 @@
+{
+  "case": {
+    "id": "T04",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "22"
+    ],
+    "purpose": "ternary endpoint pair",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 256,
+  "candidate_source_received_obligations_covered": 2560,
+  "pair_nonexpanding_encoders": 2,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 1,
+      "gates": 7,
+      "products": 2,
+      "connections": 5,
+      "encoder_rows": [
+        0,
+        8
+      ],
+      "decoder_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "encoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "1",
+            "outputs": 15
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "1111",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 0,
+      "gates": 7,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    7
+  ],
+  "histogram": [
+    {
+      "error": 1,
+      "gates": 7,
+      "count": 16
+    },
+    {
+      "error": 1,
+      "gates": 8,
+      "count": 100
+    },
+    {
+      "error": 1,
+      "gates": 9,
+      "count": 124
+    },
+    {
+      "error": 1,
+      "gates": 10,
+      "count": 16
+    }
+  ],
+  "distinct_encoder_tables": 2,
+  "distinct_decoder_tables": 256,
+  "cover_dynamic_program_states": 912,
+  "cpu_seconds": 0.015048620000000013,
+  "wall_seconds": 0.015054130999942572,
+  "peak_rss_kib": 93868
+}

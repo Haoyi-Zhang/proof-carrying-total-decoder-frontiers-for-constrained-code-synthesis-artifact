@@ -1,0 +1,1388 @@
+{
+  "protocol": "Both methods receive the same fully enumerated canonical-cost candidate pool. Histogram aggregation is lossless for strictly positive weighted objectives. No independent SAT baseline or runtime speedup is measured.",
+  "weights": [
+    [
+      1,
+      25
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      25,
+      1
+    ]
+  ],
+  "cases": [
+    {
+      "case": "B01",
+      "candidate_pool_size": 48,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B02",
+      "candidate_pool_size": 6144,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          10
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B03",
+      "candidate_pool_size": 6144,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            10
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          10
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B04",
+      "candidate_pool_size": 6144,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            2,
+            10
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          2,
+          10
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B05",
+      "candidate_pool_size": 128,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            0,
+            8
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            0,
+            8
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            0,
+            8
+          ]
+        }
+      ],
+      "frontier_size": 2,
+      "recovered_frontier": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B06",
+      "candidate_pool_size": 1280,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            6
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            0,
+            9
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            0,
+            9
+          ]
+        }
+      ],
+      "frontier_size": 2,
+      "recovered_frontier": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B07",
+      "candidate_pool_size": 8,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "B08",
+      "candidate_pool_size": 384,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T01",
+      "candidate_pool_size": 12,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T02",
+      "candidate_pool_size": 24576,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            2,
+            12
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          2,
+          12
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T03",
+      "candidate_pool_size": 768,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T04",
+      "candidate_pool_size": 256,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T05",
+      "candidate_pool_size": 4,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            5
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T06",
+      "candidate_pool_size": 256,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T07",
+      "candidate_pool_size": 1536,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            8
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          8
+        ]
+      ],
+      "missed_frontier": []
+    },
+    {
+      "case": "T08",
+      "candidate_pool_size": 768,
+      "weights_and_selections": [
+        {
+          "weights": [
+            1,
+            25
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            8
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            2
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            2,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            8,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        },
+        {
+          "weights": [
+            25,
+            1
+          ],
+          "selected": [
+            1,
+            7
+          ]
+        }
+      ],
+      "frontier_size": 1,
+      "recovered_frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missed_frontier": []
+    }
+  ],
+  "total_missed": 0
+}

@@ -1,0 +1,20 @@
+{
+  "case": "B02",
+  "accepted": true,
+  "encoders": 24,
+  "semantic_rejections": 24,
+  "relation_references": 48,
+  "encoder_plane_certificates": 24,
+  "decoder_relation_certificates": 48,
+  "proof_node_visits": 5796,
+  "conflict_leaf_visits": 2934,
+  "frontier": [
+    [
+      1,
+      10
+    ]
+  ],
+  "cpu_seconds": 0.525649207,
+  "wall_seconds": 0.5256813280000188,
+  "peak_rss_kib": 95400
+}

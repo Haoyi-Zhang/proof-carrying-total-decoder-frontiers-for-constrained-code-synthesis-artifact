@@ -1,0 +1,47 @@
+{
+  "controls": [
+    {
+      "name": "omit-one-encoder",
+      "passed": true,
+      "rejection": "ValueError: certificate does not cover all injective encoders"
+    },
+    {
+      "name": "replace-proof-root-by-conflict-leaf",
+      "passed": true,
+      "rejection": "ValueError: leaf without a unit conflict"
+    },
+    {
+      "name": "branch-outside-cnf",
+      "passed": true,
+      "rejection": "ValueError: invalid branch variable"
+    },
+    {
+      "name": "understate-product-minimum",
+      "passed": true,
+      "rejection": "ValueError: attaining circuit has wrong product count"
+    },
+    {
+      "name": "flip-attaining-circuit-mask",
+      "passed": true,
+      "rejection": "ValueError: invalid connection mask"
+    },
+    {
+      "name": "remove-semantic-core-source",
+      "passed": true,
+      "rejection": "ValueError: bad obstruction core"
+    },
+    {
+      "name": "alter-decoder-relation",
+      "passed": true,
+      "rejection": "ValueError: SAT CNF statistics mismatch"
+    },
+    {
+      "name": "drop-frontier-point",
+      "passed": true,
+      "rejection": "ValueError: frontier witness list mismatch"
+    }
+  ],
+  "passed": 8,
+  "cpu_seconds": 0.03655051300000001,
+  "peak_rss_kib": 93104
+}

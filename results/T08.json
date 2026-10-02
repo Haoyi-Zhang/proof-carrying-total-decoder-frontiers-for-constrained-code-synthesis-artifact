@@ -1,0 +1,112 @@
+{
+  "case": {
+    "id": "T08",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "01",
+      "02"
+    ],
+    "purpose": "fixed first ternary symbol, three choices",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 768,
+  "candidate_source_received_obligations_covered": 7680,
+  "pair_nonexpanding_encoders": 6,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 1,
+      "gates": 7,
+      "products": 2,
+      "connections": 2,
+      "encoder_rows": [
+        0,
+        1
+      ],
+      "decoder_table": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "1",
+            "outputs": 1
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "0001",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 1,
+      "gates": 7,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    7
+  ],
+  "histogram": [
+    {
+      "error": 1,
+      "gates": 7,
+      "count": 21
+    },
+    {
+      "error": 1,
+      "gates": 8,
+      "count": 206
+    },
+    {
+      "error": 1,
+      "gates": 9,
+      "count": 340
+    },
+    {
+      "error": 1,
+      "gates": 10,
+      "count": 173
+    },
+    {
+      "error": 1,
+      "gates": 11,
+      "count": 27
+    },
+    {
+      "error": 1,
+      "gates": 12,
+      "count": 1
+    }
+  ],
+  "distinct_encoder_tables": 6,
+  "distinct_decoder_tables": 384,
+  "cover_dynamic_program_states": 1413,
+  "cpu_seconds": 0.02005319900000002,
+  "wall_seconds": 0.02077419500005817,
+  "peak_rss_kib": 94028
+}

@@ -1,0 +1,184 @@
+{
+  "binary_witness": {
+    "spec": {
+      "id": "W01",
+      "q": 2,
+      "n": 4,
+      "k": 2,
+      "allowed": [
+        "1000",
+        "0100",
+        "0010",
+        "0001"
+      ],
+      "radius": 1,
+      "gate_cap": 24,
+      "connection_cap": 48
+    },
+    "point": {
+      "error": 2,
+      "gates": 12,
+      "products": 6,
+      "connections": 6,
+      "encoder_rows": [
+        8,
+        4,
+        2,
+        1
+      ],
+      "decoder_table": [
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 4,
+        "terms": [
+          {
+            "cube": "00",
+            "outputs": 8
+          },
+          {
+            "cube": "01",
+            "outputs": 4
+          },
+          {
+            "cube": "10",
+            "outputs": 2
+          },
+          {
+            "cube": "11",
+            "outputs": 1
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 2,
+        "terms": [
+          {
+            "cube": "00**",
+            "outputs": 2
+          },
+          {
+            "cube": "0*0*",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  },
+  "binary_pair_checks": [
+    {
+      "messages": [
+        0,
+        1
+      ],
+      "message_distance": 1,
+      "code_distance": 2
+    },
+    {
+      "messages": [
+        0,
+        2
+      ],
+      "message_distance": 1,
+      "code_distance": 2
+    },
+    {
+      "messages": [
+        0,
+        3
+      ],
+      "message_distance": 2,
+      "code_distance": 2
+    },
+    {
+      "messages": [
+        1,
+        2
+      ],
+      "message_distance": 2,
+      "code_distance": 2
+    },
+    {
+      "messages": [
+        1,
+        3
+      ],
+      "message_distance": 1,
+      "code_distance": 2
+    },
+    {
+      "messages": [
+        2,
+        3
+      ],
+      "message_distance": 1,
+      "code_distance": 2
+    }
+  ],
+  "empty_four_ball_intersection": [],
+  "deletion_minimality": [
+    {
+      "removed_message": 0,
+      "common_outputs": [
+        3
+      ]
+    },
+    {
+      "removed_message": 1,
+      "common_outputs": [
+        2
+      ]
+    },
+    {
+      "removed_message": 2,
+      "common_outputs": [
+        1
+      ]
+    },
+    {
+      "removed_message": 3,
+      "common_outputs": [
+        0
+      ]
+    }
+  ],
+  "ternary_cross_noncontractive": true,
+  "ternary_zero_near_all_four": true,
+  "pin_use_counterexample": {
+    "encoder": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "decoder_truth": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "ignored_decoder_coordinate": 1,
+    "valid_inverse": true,
+    "total_error": 1
+  },
+  "formal_status": "Explicit finite witness checks; general minimal-length and cover arguments are handwritten proofs."
+}

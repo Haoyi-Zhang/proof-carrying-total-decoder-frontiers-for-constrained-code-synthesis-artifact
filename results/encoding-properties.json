@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "cardinality": {
+    "formulas": 25,
+    "assignments": 382
+  },
+  "relational": {
+    "relations": 9,
+    "bounds": 36,
+    "correlated_forbidden_tuple_checks": 2
+  },
+  "scope": "Exhaustive small-oracle tests; not a proof for arbitrary encodings."
+}

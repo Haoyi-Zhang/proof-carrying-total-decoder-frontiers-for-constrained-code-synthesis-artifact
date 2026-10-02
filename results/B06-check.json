@@ -1,0 +1,20 @@
+{
+  "case": "B06",
+  "accepted": true,
+  "candidate_designs_replayed": 1280,
+  "plane_minimality_certificates": 260,
+  "bounded_cover_nodes": 411,
+  "frontier": [
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "cpu_seconds": 0.017227289000000034,
+  "wall_seconds": 0.017226545000085025,
+  "peak_rss_kib": 93864
+}

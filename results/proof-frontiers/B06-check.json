@@ -1,0 +1,24 @@
+{
+  "case": "B06",
+  "accepted": true,
+  "encoders": 20,
+  "semantic_rejections": 18,
+  "relation_references": 22,
+  "encoder_plane_certificates": 20,
+  "decoder_relation_certificates": 22,
+  "proof_node_visits": 176,
+  "conflict_leaf_visits": 109,
+  "frontier": [
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "cpu_seconds": 0.02914244100000002,
+  "wall_seconds": 0.02914849199987657,
+  "peak_rss_kib": 94760
+}

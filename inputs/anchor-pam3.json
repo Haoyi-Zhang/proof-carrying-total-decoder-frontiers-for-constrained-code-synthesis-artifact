@@ -1,0 +1,15 @@
+{
+  "id": "A01",
+  "name": "PAM-3 3b2s printed-constraint census",
+  "source_doi": "10.23919/DATE64628.2025.10992737",
+  "message_bits": 3,
+  "channel_bits": 4,
+  "messages": ["000", "001", "010", "011", "100", "101", "110", "111"],
+  "allowed_codewords": ["0000", "0001", "0011", "0100", "0101", "0111", "1100", "1101", "1111"],
+  "pairwise_rule": "For every message pair i,j, Hamming(f(i),f(j)) >= Hamming(i,j).",
+  "total_decoder_received_domain": "all 16 raw four-bit words",
+  "channel_error_radius_bits": 1,
+  "target_total_decoder_bound": 1,
+  "source_text_reported_pairwise_count": 72,
+  "interpretation_note": "The census implements the codeword list in Fig. 5 and the no-error-growth inequality printed in Table I of the source. It is labeled a printed-constraint audit, not a claimed reproduction of the source's reported count."
+}

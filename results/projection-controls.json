@@ -1,0 +1,42 @@
+[
+  {
+    "control": "missing_source",
+    "passed": true,
+    "reason": "source set mismatch"
+  },
+  {
+    "control": "false_output",
+    "passed": true,
+    "reason": "output intersection/pin mismatch"
+  },
+  {
+    "control": "missing_encoder_bound",
+    "passed": true,
+    "reason": "incomplete encoder-bound coverage"
+  },
+  {
+    "control": "wrong_decoder_count",
+    "passed": true,
+    "reason": "product count mismatch"
+  },
+  {
+    "control": "incomplete_obstruction",
+    "passed": true,
+    "reason": "core intersection not empty"
+  },
+  {
+    "control": "bitwise_relaxation_exposes_forbidden_output",
+    "passed": true,
+    "legal_outputs": [
+      0,
+      1,
+      2
+    ],
+    "bitwise_relaxation": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+]

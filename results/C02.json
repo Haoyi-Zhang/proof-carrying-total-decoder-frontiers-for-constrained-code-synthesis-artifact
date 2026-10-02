@@ -1,0 +1,35 @@
+{
+  "case": {
+    "id": "C02",
+    "q": 3,
+    "n": 1,
+    "k": 2,
+    "allowed": [
+      "0",
+      "1",
+      "2"
+    ],
+    "purpose": "codeword-capacity infeasibility",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48
+  },
+  "candidate_designs": 0,
+  "candidate_source_received_obligations_covered": 0,
+  "pair_nonexpanding_encoders": 0,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [],
+  "pair_only_frontier": [],
+  "best_cost_by_error_bound": [
+    null,
+    null,
+    null
+  ],
+  "histogram": [],
+  "distinct_encoder_tables": 0,
+  "distinct_decoder_tables": 0,
+  "cover_dynamic_program_states": 0,
+  "cpu_seconds": 4.714000000000107e-05,
+  "wall_seconds": 4.834199990000343e-05,
+  "peak_rss_kib": 92720
+}

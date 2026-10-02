@@ -1,0 +1,261 @@
+[
+  {
+    "id": "B01",
+    "q": 2,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "purpose": "unrestricted binary length two",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B02",
+    "q": 2,
+    "n": 3,
+    "k": 2,
+    "allowed": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ],
+    "purpose": "even parity",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B03",
+    "q": 2,
+    "n": 3,
+    "k": 2,
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "111"
+    ],
+    "purpose": "asymmetric codebook",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B04",
+    "q": 2,
+    "n": 3,
+    "k": 2,
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "100"
+    ],
+    "purpose": "weight at most one",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B05",
+    "q": 2,
+    "n": 3,
+    "k": 1,
+    "allowed": [
+      "000",
+      "111"
+    ],
+    "purpose": "antipodal repetition",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B06",
+    "q": 2,
+    "n": 3,
+    "k": 1,
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "100",
+      "101"
+    ],
+    "purpose": "no adjacent ones",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B07",
+    "q": 2,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "11"
+    ],
+    "purpose": "binary equal symbols",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "B08",
+    "q": 2,
+    "n": 3,
+    "k": 1,
+    "allowed": [
+      "001",
+      "010",
+      "100"
+    ],
+    "purpose": "binary weight one",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T01",
+    "q": 3,
+    "n": 1,
+    "k": 1,
+    "allowed": [
+      "0",
+      "1",
+      "2"
+    ],
+    "purpose": "unrestricted one-symbol ternary",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T02",
+    "q": 3,
+    "n": 2,
+    "k": 2,
+    "allowed": [
+      "01",
+      "02",
+      "10",
+      "20"
+    ],
+    "purpose": "one nonzero ternary symbol",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "development pilot"
+  },
+  {
+    "id": "T03",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "11",
+      "22"
+    ],
+    "purpose": "equal ternary symbols",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T04",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "22"
+    ],
+    "purpose": "ternary endpoint pair",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T05",
+    "q": 3,
+    "n": 1,
+    "k": 1,
+    "allowed": [
+      "0",
+      "2"
+    ],
+    "purpose": "one-symbol endpoint pair",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T06",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "01"
+    ],
+    "purpose": "fixed first ternary symbol",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T07",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "01",
+      "02",
+      "10",
+      "20"
+    ],
+    "purpose": "one nonzero ternary symbol, one-bit payload",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  {
+    "id": "T08",
+    "q": 3,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "01",
+      "02"
+    ],
+    "purpose": "fixed first ternary symbol, three choices",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  }
+]

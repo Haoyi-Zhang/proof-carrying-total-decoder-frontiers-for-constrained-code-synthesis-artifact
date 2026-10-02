@@ -1,0 +1,324 @@
+{
+  "accepted": true,
+  "profiles_checked": 444,
+  "encoders_checked": 174,
+  "cases": [
+    {
+      "case": "B01",
+      "encoders": 12,
+      "profiles": 24,
+      "decoder_count_by_bound": [
+        0,
+        48
+      ],
+      "infeasible_encoders_by_bound": [
+        12,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 8,
+        "intersection_2": 4
+      },
+      "received_rows_checked": 96,
+      "channel_distance_comparisons": 192,
+      "accepted": true
+    },
+    {
+      "case": "B02",
+      "encoders": 24,
+      "profiles": 72,
+      "decoder_count_by_bound": [
+        0,
+        24,
+        6144
+      ],
+      "infeasible_encoders_by_bound": [
+        24,
+        0,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 24
+      },
+      "received_rows_checked": 576,
+      "channel_distance_comparisons": 2304,
+      "accepted": true
+    },
+    {
+      "case": "B03",
+      "encoders": 24,
+      "profiles": 72,
+      "decoder_count_by_bound": [
+        0,
+        96,
+        6144
+      ],
+      "infeasible_encoders_by_bound": [
+        24,
+        16,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 40
+      },
+      "received_rows_checked": 576,
+      "channel_distance_comparisons": 2304,
+      "accepted": true
+    },
+    {
+      "case": "B04",
+      "encoders": 24,
+      "profiles": 72,
+      "decoder_count_by_bound": [
+        0,
+        0,
+        6144
+      ],
+      "infeasible_encoders_by_bound": [
+        24,
+        24,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 48
+      },
+      "received_rows_checked": 576,
+      "channel_distance_comparisons": 2304,
+      "accepted": true
+    },
+    {
+      "case": "B05",
+      "encoders": 2,
+      "profiles": 4,
+      "decoder_count_by_bound": [
+        2,
+        128
+      ],
+      "infeasible_encoders_by_bound": [
+        0,
+        0
+      ],
+      "obstruction_kinds": {},
+      "received_rows_checked": 32,
+      "channel_distance_comparisons": 64,
+      "accepted": true
+    },
+    {
+      "case": "B06",
+      "encoders": 20,
+      "profiles": 40,
+      "decoder_count_by_bound": [
+        2,
+        1280
+      ],
+      "infeasible_encoders_by_bound": [
+        18,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 10,
+        "intersection_2": 8
+      },
+      "received_rows_checked": 320,
+      "channel_distance_comparisons": 640,
+      "accepted": true
+    },
+    {
+      "case": "B07",
+      "encoders": 2,
+      "profiles": 4,
+      "decoder_count_by_bound": [
+        0,
+        8
+      ],
+      "infeasible_encoders_by_bound": [
+        2,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 2
+      },
+      "received_rows_checked": 16,
+      "channel_distance_comparisons": 32,
+      "accepted": true
+    },
+    {
+      "case": "B08",
+      "encoders": 6,
+      "profiles": 12,
+      "decoder_count_by_bound": [
+        0,
+        384
+      ],
+      "infeasible_encoders_by_bound": [
+        6,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 6
+      },
+      "received_rows_checked": 96,
+      "channel_distance_comparisons": 192,
+      "accepted": true
+    },
+    {
+      "case": "T01",
+      "encoders": 6,
+      "profiles": 12,
+      "decoder_count_by_bound": [
+        0,
+        12
+      ],
+      "infeasible_encoders_by_bound": [
+        6,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 4,
+        "intersection_2": 2
+      },
+      "received_rows_checked": 36,
+      "channel_distance_comparisons": 72,
+      "accepted": true
+    },
+    {
+      "case": "T02",
+      "encoders": 24,
+      "profiles": 72,
+      "decoder_count_by_bound": [
+        0,
+        0,
+        24576
+      ],
+      "infeasible_encoders_by_bound": [
+        24,
+        24,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 24,
+        "intersection_4": 24
+      },
+      "received_rows_checked": 648,
+      "channel_distance_comparisons": 2592,
+      "accepted": true
+    },
+    {
+      "case": "T03",
+      "encoders": 6,
+      "profiles": 12,
+      "decoder_count_by_bound": [
+        0,
+        768
+      ],
+      "infeasible_encoders_by_bound": [
+        6,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 6
+      },
+      "received_rows_checked": 108,
+      "channel_distance_comparisons": 216,
+      "accepted": true
+    },
+    {
+      "case": "T04",
+      "encoders": 2,
+      "profiles": 4,
+      "decoder_count_by_bound": [
+        0,
+        256
+      ],
+      "infeasible_encoders_by_bound": [
+        2,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 2
+      },
+      "received_rows_checked": 36,
+      "channel_distance_comparisons": 72,
+      "accepted": true
+    },
+    {
+      "case": "T05",
+      "encoders": 2,
+      "profiles": 4,
+      "decoder_count_by_bound": [
+        0,
+        4
+      ],
+      "infeasible_encoders_by_bound": [
+        2,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 2
+      },
+      "received_rows_checked": 12,
+      "channel_distance_comparisons": 24,
+      "accepted": true
+    },
+    {
+      "case": "T06",
+      "encoders": 2,
+      "profiles": 4,
+      "decoder_count_by_bound": [
+        0,
+        256
+      ],
+      "infeasible_encoders_by_bound": [
+        2,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 2
+      },
+      "received_rows_checked": 36,
+      "channel_distance_comparisons": 72,
+      "accepted": true
+    },
+    {
+      "case": "T07",
+      "encoders": 12,
+      "profiles": 24,
+      "decoder_count_by_bound": [
+        0,
+        1536
+      ],
+      "infeasible_encoders_by_bound": [
+        12,
+        0
+      ],
+      "obstruction_kinds": {
+        "intersection_2": 12
+      },
+      "received_rows_checked": 216,
+      "channel_distance_comparisons": 432,
+      "accepted": true
+    },
+    {
+      "case": "T08",
+      "encoders": 6,
+      "profiles": 12,
+      "decoder_count_by_bound": [
+        0,
+        768
+      ],
+      "infeasible_encoders_by_bound": [
+        6,
+        0
+      ],
+      "obstruction_kinds": {
+        "pin": 4,
+        "intersection_2": 2
+      },
+      "received_rows_checked": 108,
+      "channel_distance_comparisons": 216,
+      "accepted": true
+    }
+  ],
+  "cpu_seconds": 0.018027298000000025,
+  "peak_rss_kib": 96300
+}

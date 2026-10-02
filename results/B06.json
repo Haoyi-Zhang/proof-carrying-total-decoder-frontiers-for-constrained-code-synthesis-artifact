@@ -1,0 +1,163 @@
+{
+  "case": {
+    "id": "B06",
+    "q": 2,
+    "n": 3,
+    "k": 1,
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "100",
+      "101"
+    ],
+    "purpose": "no adjacent ones",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 1280,
+  "candidate_source_received_obligations_covered": 10240,
+  "pair_nonexpanding_encoders": 20,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 0,
+      "gates": 9,
+      "products": 5,
+      "connections": 6,
+      "encoder_rows": [
+        2,
+        5
+      ],
+      "decoder_table": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "encoder_plane": {
+        "products": 2,
+        "terms": [
+          {
+            "cube": "1",
+            "outputs": 5
+          },
+          {
+            "cube": "0",
+            "outputs": 2
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 3,
+        "terms": [
+          {
+            "cube": "*01",
+            "outputs": 1
+          },
+          {
+            "cube": "10*",
+            "outputs": 1
+          },
+          {
+            "cube": "1*1",
+            "outputs": 1
+          }
+        ]
+      }
+    },
+    {
+      "error": 1,
+      "gates": 6,
+      "products": 2,
+      "connections": 2,
+      "encoder_rows": [
+        0,
+        1
+      ],
+      "decoder_table": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "1",
+            "outputs": 1
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "001",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 0,
+      "gates": 6,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    9,
+    6
+  ],
+  "histogram": [
+    {
+      "error": 0,
+      "gates": 9,
+      "count": 2
+    },
+    {
+      "error": 1,
+      "gates": 6,
+      "count": 36
+    },
+    {
+      "error": 1,
+      "gates": 7,
+      "count": 326
+    },
+    {
+      "error": 1,
+      "gates": 8,
+      "count": 602
+    },
+    {
+      "error": 1,
+      "gates": 9,
+      "count": 284
+    },
+    {
+      "error": 1,
+      "gates": 10,
+      "count": 30
+    }
+  ],
+  "distinct_encoder_tables": 20,
+  "distinct_decoder_tables": 240,
+  "cover_dynamic_program_states": 879,
+  "cpu_seconds": 0.009840618999999995,
+  "wall_seconds": 0.00984461600000941,
+  "peak_rss_kib": 93868
+}

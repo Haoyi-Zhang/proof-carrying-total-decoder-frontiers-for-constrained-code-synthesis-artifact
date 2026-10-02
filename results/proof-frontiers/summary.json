@@ -1,0 +1,340 @@
+{
+  "accepted": true,
+  "cases": 16,
+  "encoders_covered": 174,
+  "encoder_plane_certificates": 174,
+  "decoder_relation_certificates": 210,
+  "semantic_infeasible_profiles": 234,
+  "feasible_encoder_bound_relations": 210,
+  "lower_bound_proof_search_nodes": 88664,
+  "satisfying_witness_search_nodes": 21472,
+  "earlier_unsat_search_nodes": 11836,
+  "all_generation_search_nodes": 121972,
+  "stored_proof_tree_records": 44524,
+  "lower_bound_proof_replay_node_visits": 88664,
+  "proof_checker_conflict_leaf_visits": 44524,
+  "frontier_points": 18,
+  "generation_cpu_seconds": 24.834194324000002,
+  "generation_wall_seconds_sum": 24.837848713000312,
+  "checking_cpu_seconds": 16.585387154,
+  "checking_wall_seconds_sum": 16.58768748500006,
+  "certificate_bytes": 876367,
+  "mutation_controls_passed": 8,
+  "per_case": [
+    {
+      "case": "B01",
+      "encoders": 12,
+      "encoder_planes": 12,
+      "decoder_relations": 12,
+      "lower_bound_replay_nodes": 60,
+      "satisfying_witness_search_nodes": 141,
+      "earlier_unsat_search_nodes": 6,
+      "all_generation_search_nodes": 207,
+      "proof_records": 42,
+      "frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "generation_cpu_seconds": 0.010690581000000032,
+      "checking_cpu_seconds": 0.005632232000000015
+    },
+    {
+      "case": "B02",
+      "encoders": 24,
+      "encoder_planes": 24,
+      "decoder_relations": 48,
+      "lower_bound_replay_nodes": 5796,
+      "satisfying_witness_search_nodes": 9614,
+      "earlier_unsat_search_nodes": 492,
+      "all_generation_search_nodes": 15902,
+      "proof_records": 2934,
+      "frontier": [
+        [
+          1,
+          10
+        ]
+      ],
+      "generation_cpu_seconds": 2.258379729,
+      "checking_cpu_seconds": 0.525649207
+    },
+    {
+      "case": "B03",
+      "encoders": 24,
+      "encoder_planes": 24,
+      "decoder_relations": 32,
+      "lower_bound_replay_nodes": 6612,
+      "satisfying_witness_search_nodes": 3392,
+      "earlier_unsat_search_nodes": 1364,
+      "all_generation_search_nodes": 11368,
+      "proof_records": 3334,
+      "frontier": [
+        [
+          1,
+          10
+        ]
+      ],
+      "generation_cpu_seconds": 1.545945656,
+      "checking_cpu_seconds": 0.754808242
+    },
+    {
+      "case": "B04",
+      "encoders": 24,
+      "encoder_planes": 24,
+      "decoder_relations": 24,
+      "lower_bound_replay_nodes": 6872,
+      "satisfying_witness_search_nodes": 1809,
+      "earlier_unsat_search_nodes": 1470,
+      "all_generation_search_nodes": 10151,
+      "proof_records": 3460,
+      "frontier": [
+        [
+          2,
+          10
+        ]
+      ],
+      "generation_cpu_seconds": 1.379683847,
+      "checking_cpu_seconds": 0.821435288
+    },
+    {
+      "case": "B05",
+      "encoders": 2,
+      "encoder_planes": 2,
+      "decoder_relations": 4,
+      "lower_bound_replay_nodes": 20,
+      "satisfying_witness_search_nodes": 63,
+      "earlier_unsat_search_nodes": 8,
+      "all_generation_search_nodes": 91,
+      "proof_records": 13,
+      "frontier": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "generation_cpu_seconds": 0.023033460000000006,
+      "checking_cpu_seconds": 0.008942233000000022
+    },
+    {
+      "case": "B06",
+      "encoders": 20,
+      "encoder_planes": 20,
+      "decoder_relations": 22,
+      "lower_bound_replay_nodes": 176,
+      "satisfying_witness_search_nodes": 514,
+      "earlier_unsat_search_nodes": 20,
+      "all_generation_search_nodes": 710,
+      "proof_records": 109,
+      "frontier": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "generation_cpu_seconds": 0.08552571800000003,
+      "checking_cpu_seconds": 0.02914244100000002
+    },
+    {
+      "case": "B07",
+      "encoders": 2,
+      "encoder_planes": 2,
+      "decoder_relations": 2,
+      "lower_bound_replay_nodes": 4,
+      "satisfying_witness_search_nodes": 22,
+      "earlier_unsat_search_nodes": 0,
+      "all_generation_search_nodes": 26,
+      "proof_records": 4,
+      "frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "generation_cpu_seconds": 0.0018029299999999804,
+      "checking_cpu_seconds": 0.0015343710000000343
+    },
+    {
+      "case": "B08",
+      "encoders": 6,
+      "encoder_planes": 6,
+      "decoder_relations": 6,
+      "lower_bound_replay_nodes": 72,
+      "satisfying_witness_search_nodes": 158,
+      "earlier_unsat_search_nodes": 6,
+      "all_generation_search_nodes": 236,
+      "proof_records": 42,
+      "frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "generation_cpu_seconds": 0.02180544499999998,
+      "checking_cpu_seconds": 0.007454601000000005
+    },
+    {
+      "case": "T01",
+      "encoders": 6,
+      "encoder_planes": 6,
+      "decoder_relations": 6,
+      "lower_bound_replay_nodes": 24,
+      "satisfying_witness_search_nodes": 66,
+      "earlier_unsat_search_nodes": 2,
+      "all_generation_search_nodes": 92,
+      "proof_records": 18,
+      "frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "generation_cpu_seconds": 0.004962797000000019,
+      "checking_cpu_seconds": 0.002952408999999989
+    },
+    {
+      "case": "T02",
+      "encoders": 24,
+      "encoder_planes": 24,
+      "decoder_relations": 24,
+      "lower_bound_replay_nodes": 68680,
+      "satisfying_witness_search_nodes": 4357,
+      "earlier_unsat_search_nodes": 8452,
+      "all_generation_search_nodes": 81489,
+      "proof_records": 34364,
+      "frontier": [
+        [
+          2,
+          12
+        ]
+      ],
+      "generation_cpu_seconds": 19.111927292,
+      "checking_cpu_seconds": 14.351474675
+    },
+    {
+      "case": "T03",
+      "encoders": 6,
+      "encoder_planes": 6,
+      "decoder_relations": 6,
+      "lower_bound_replay_nodes": 48,
+      "satisfying_witness_search_nodes": 326,
+      "earlier_unsat_search_nodes": 2,
+      "all_generation_search_nodes": 376,
+      "proof_records": 30,
+      "frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "generation_cpu_seconds": 0.090164784,
+      "checking_cpu_seconds": 0.014527015000000032
+    },
+    {
+      "case": "T04",
+      "encoders": 2,
+      "encoder_planes": 2,
+      "decoder_relations": 2,
+      "lower_bound_replay_nodes": 4,
+      "satisfying_witness_search_nodes": 114,
+      "earlier_unsat_search_nodes": 0,
+      "all_generation_search_nodes": 118,
+      "proof_records": 4,
+      "frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "generation_cpu_seconds": 0.03075159300000002,
+      "checking_cpu_seconds": 0.004999171999999996
+    },
+    {
+      "case": "T05",
+      "encoders": 2,
+      "encoder_planes": 2,
+      "decoder_relations": 2,
+      "lower_bound_replay_nodes": 4,
+      "satisfying_witness_search_nodes": 22,
+      "earlier_unsat_search_nodes": 0,
+      "all_generation_search_nodes": 26,
+      "proof_records": 4,
+      "frontier": [
+        [
+          1,
+          5
+        ]
+      ],
+      "generation_cpu_seconds": 0.0017096920000000404,
+      "checking_cpu_seconds": 0.0011157489999999992
+    },
+    {
+      "case": "T06",
+      "encoders": 2,
+      "encoder_planes": 2,
+      "decoder_relations": 2,
+      "lower_bound_replay_nodes": 4,
+      "satisfying_witness_search_nodes": 59,
+      "earlier_unsat_search_nodes": 0,
+      "all_generation_search_nodes": 63,
+      "proof_records": 4,
+      "frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "generation_cpu_seconds": 0.022157287000000025,
+      "checking_cpu_seconds": 0.00474322100000002
+    },
+    {
+      "case": "T07",
+      "encoders": 12,
+      "encoder_planes": 12,
+      "decoder_relations": 12,
+      "lower_bound_replay_nodes": 240,
+      "satisfying_witness_search_nodes": 619,
+      "earlier_unsat_search_nodes": 12,
+      "all_generation_search_nodes": 871,
+      "proof_records": 132,
+      "frontier": [
+        [
+          1,
+          8
+        ]
+      ],
+      "generation_cpu_seconds": 0.176078878,
+      "checking_cpu_seconds": 0.03576005900000001
+    },
+    {
+      "case": "T08",
+      "encoders": 6,
+      "encoder_planes": 6,
+      "decoder_relations": 6,
+      "lower_bound_replay_nodes": 48,
+      "satisfying_witness_search_nodes": 196,
+      "earlier_unsat_search_nodes": 2,
+      "all_generation_search_nodes": 246,
+      "proof_records": 30,
+      "frontier": [
+        [
+          1,
+          7
+        ]
+      ],
+      "generation_cpu_seconds": 0.069574635,
+      "checking_cpu_seconds": 0.015216238999999965
+    }
+  ],
+  "scope": "Exact finite grammar and locked cases only. The 88,664 replay visits are the final one-fewer-product lower-bound trees; total producer DPLL search also includes earlier unsatisfiable bounds and satisfying witness searches.",
+  "aggregation_cpu_seconds": 0.016245620000000016,
+  "peak_rss_kib": 100272
+}

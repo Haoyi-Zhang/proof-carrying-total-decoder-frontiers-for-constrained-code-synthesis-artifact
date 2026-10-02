@@ -1,0 +1,20 @@
+{
+  "case": "T02",
+  "accepted": true,
+  "encoders": 24,
+  "semantic_rejections": 48,
+  "relation_references": 24,
+  "encoder_plane_certificates": 24,
+  "decoder_relation_certificates": 24,
+  "proof_node_visits": 68680,
+  "conflict_leaf_visits": 34364,
+  "frontier": [
+    [
+      2,
+      12
+    ]
+  ],
+  "cpu_seconds": 14.351474675,
+  "wall_seconds": 14.352733951000118,
+  "peak_rss_kib": 99880
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "understated-pairwise-count",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "deleted-mapping",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "duplicate-mapping",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "wrong-omitted-word",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "understated-total-error",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "wrong-obstruction-row",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "deleted-core-source",
+    "passed": true,
+    "rejection": "ValueError"
+  },
+  {
+    "name": "false-source-agreement",
+    "passed": true,
+    "rejection": "ValueError"
+  }
+]

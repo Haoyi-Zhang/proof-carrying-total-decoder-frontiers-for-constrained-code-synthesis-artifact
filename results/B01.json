@@ -1,0 +1,93 @@
+{
+  "case": {
+    "id": "B01",
+    "q": 2,
+    "n": 2,
+    "k": 1,
+    "allowed": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "purpose": "unrestricted binary length two",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 48,
+  "candidate_source_received_obligations_covered": 288,
+  "pair_nonexpanding_encoders": 12,
+  "pair_radius1_pass_total_fail_designs": 0,
+  "frontier": [
+    {
+      "error": 1,
+      "gates": 5,
+      "products": 2,
+      "connections": 2,
+      "encoder_rows": [
+        0,
+        1
+      ],
+      "decoder_table": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "encoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "1",
+            "outputs": 1
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 1,
+        "terms": [
+          {
+            "cube": "01",
+            "outputs": 1
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 0,
+      "gates": 5,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    5
+  ],
+  "histogram": [
+    {
+      "error": 1,
+      "gates": 5,
+      "count": 14
+    },
+    {
+      "error": 1,
+      "gates": 6,
+      "count": 24
+    },
+    {
+      "error": 1,
+      "gates": 7,
+      "count": 10
+    }
+  ],
+  "distinct_encoder_tables": 12,
+  "distinct_decoder_tables": 14,
+  "cover_dynamic_program_states": 64,
+  "cpu_seconds": 0.0007178869999999726,
+  "wall_seconds": 0.0007220060001600359,
+  "peak_rss_kib": 93480
+}

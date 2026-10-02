@@ -1,0 +1,117 @@
+{
+  "case": {
+    "id": "B02",
+    "q": 2,
+    "n": 3,
+    "k": 2,
+    "allowed": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ],
+    "purpose": "even parity",
+    "radius": 1,
+    "gate_cap": 24,
+    "connection_cap": 48,
+    "selection_role": "locked analytical case; not a held-out statistical sample"
+  },
+  "candidate_designs": 6144,
+  "candidate_source_received_obligations_covered": 98304,
+  "pair_nonexpanding_encoders": 24,
+  "pair_radius1_pass_total_fail_designs": 6120,
+  "frontier": [
+    {
+      "error": 1,
+      "gates": 10,
+      "products": 5,
+      "connections": 8,
+      "encoder_rows": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "decoder_table": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "encoder_plane": {
+        "products": 3,
+        "terms": [
+          {
+            "cube": "01",
+            "outputs": 3
+          },
+          {
+            "cube": "10",
+            "outputs": 5
+          },
+          {
+            "cube": "11",
+            "outputs": 6
+          }
+        ]
+      },
+      "decoder_plane": {
+        "products": 2,
+        "terms": [
+          {
+            "cube": "*1*",
+            "outputs": 1
+          },
+          {
+            "cube": "1**",
+            "outputs": 2
+          }
+        ]
+      }
+    }
+  ],
+  "pair_only_frontier": [
+    {
+      "pair_error_bound": 0,
+      "gates": 10,
+      "total_error_of_witness": 1
+    }
+  ],
+  "best_cost_by_error_bound": [
+    null,
+    10,
+    10
+  ],
+  "histogram": [
+    {
+      "error": 1,
+      "gates": 10,
+      "count": 24
+    },
+    {
+      "error": 2,
+      "gates": 11,
+      "count": 1536
+    },
+    {
+      "error": 2,
+      "gates": 12,
+      "count": 3432
+    },
+    {
+      "error": 2,
+      "gates": 13,
+      "count": 1152
+    }
+  ],
+  "distinct_encoder_tables": 24,
+  "distinct_decoder_tables": 6144,
+  "cover_dynamic_program_states": 34370,
+  "cpu_seconds": 0.29629123900000004,
+  "wall_seconds": 0.29632672299999285,
+  "peak_rss_kib": 102440
+}

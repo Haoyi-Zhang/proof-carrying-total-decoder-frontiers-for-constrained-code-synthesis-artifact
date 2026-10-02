@@ -1,0 +1,39 @@
+{
+  "randomized": false,
+  "seed": null,
+  "selection": "Sixteen analytical cases selected before their full evaluation, after generation and independent replay of the development cross-codebook case. T07 and T08 were restricted before lock to reserve replay headroom after the measured checking pilot. The received-word obstruction remains in T02; no statistical workload-breadth claim is made.",
+  "expected_candidate_counts": {
+    "B01": 48,
+    "B02": 6144,
+    "B03": 6144,
+    "B04": 6144,
+    "B05": 128,
+    "B06": 1280,
+    "B07": 8,
+    "B08": 384,
+    "T01": 12,
+    "T02": 24576,
+    "T03": 768,
+    "T04": 256,
+    "T05": 4,
+    "T06": 256,
+    "T07": 1536,
+    "T08": 768
+  },
+  "candidate_count_per_pass": 48456,
+  "pilot_candidate_count": 49152,
+  "planned_generation_and_check_passes": 2,
+  "scope": "Proof-carrying finite-frontier evaluation for the exact locked grammar plus a complete external printed-constraint census; no generic MO-MaxSAT, physical-design, asymptotic, or statistical-generalization claim.",
+  "pilot_generation_designs": 24576,
+  "pilot_check_designs": 24576,
+  "total_planned_candidate_visits": 146160,
+  "external_anchor_audit": {
+    "case": "A01 PAM-3 3b2s printed-constraint census",
+    "selection_basis": "The codeword list and pairwise inequality come from the project anchor paper, not from tuning on the delivered method.",
+    "complete_pairwise_valid_mappings": 96,
+    "source_text_reported_count": 72,
+    "status": "Unresolved numerical discrepancy; explicitly not labeled a source reproduction.",
+    "partial_search_nodes_producer": 3666,
+    "independent_check": "Different message order and codeword traversal."
+  }
+}

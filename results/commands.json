@@ -1,0 +1,1187 @@
+[
+  {
+    "stage": "generate-B01",
+    "child_cpu_seconds": 0.5326139999999999,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5356169510000655,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"candidate_designs\": 48,\n  \"best_cost_by_error_bound\": [\n    null,\n    5\n  ],\n  \"cpu_seconds\": 0.0007178869999999726,\n  \"wall_seconds\": 0.0007220060001600359,\n  \"peak_rss_kib\": 93480\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B01",
+    "child_cpu_seconds": 0.5294190000000001,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5308971079998628,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"case\": \"B01\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 48,\n  \"plane_minimality_certificates\": 26,\n  \"bounded_cover_nodes\": 26,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.0009355909999999579,\n  \"wall_seconds\": 0.0009348769999633078,\n  \"peak_rss_kib\": 93476\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B02",
+    "child_cpu_seconds": 0.8512350000000001,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.8531738169999699,
+    "child_peak_rss_kib_this_invocation": 106280,
+    "stdout": "{\n  \"candidate_designs\": 6144,\n  \"best_cost_by_error_bound\": [\n    null,\n    10,\n    10\n  ],\n  \"cpu_seconds\": 0.29629123900000004,\n  \"wall_seconds\": 0.29632672299999285,\n  \"peak_rss_kib\": 102440\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B02",
+    "child_cpu_seconds": 1.2002249999999997,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.2062061959998118,
+    "child_peak_rss_kib_this_invocation": 106280,
+    "stdout": "{\n  \"case\": \"B02\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 6144,\n  \"plane_minimality_certificates\": 6168,\n  \"bounded_cover_nodes\": 38868,\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.668364766,\n  \"wall_seconds\": 0.6710937339998964,\n  \"peak_rss_kib\": 105640\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B03",
+    "child_cpu_seconds": 0.830159,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.8329739349999272,
+    "child_peak_rss_kib_this_invocation": 106916,
+    "stdout": "{\n  \"candidate_designs\": 6144,\n  \"best_cost_by_error_bound\": [\n    null,\n    10,\n    10\n  ],\n  \"cpu_seconds\": 0.281920705,\n  \"wall_seconds\": 0.2820318579999821,\n  \"peak_rss_kib\": 103076\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B03",
+    "child_cpu_seconds": 1.153954,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.1573001790000035,
+    "child_peak_rss_kib_this_invocation": 106916,
+    "stdout": "{\n  \"case\": \"B03\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 6144,\n  \"plane_minimality_certificates\": 6168,\n  \"bounded_cover_nodes\": 40511,\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.654328693,\n  \"wall_seconds\": 0.6553225460002068,\n  \"peak_rss_kib\": 106404\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B04",
+    "child_cpu_seconds": 0.8295580000000004,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.8322611720000168,
+    "child_peak_rss_kib_this_invocation": 107052,
+    "stdout": "{\n  \"candidate_designs\": 6144,\n  \"best_cost_by_error_bound\": [\n    null,\n    null,\n    10\n  ],\n  \"cpu_seconds\": 0.293371599,\n  \"wall_seconds\": 0.2934166529998947,\n  \"peak_rss_kib\": 103212\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B04",
+    "child_cpu_seconds": 1.1508509999999998,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.1529717539999638,
+    "child_peak_rss_kib_this_invocation": 107052,
+    "stdout": "{\n  \"case\": \"B04\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 6144,\n  \"plane_minimality_certificates\": 6168,\n  \"bounded_cover_nodes\": 39185,\n  \"frontier\": [\n    [\n      2,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.641259947,\n  \"wall_seconds\": 0.641326582000147,\n  \"peak_rss_kib\": 106536\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B05",
+    "child_cpu_seconds": 0.500961,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5031868860000941,
+    "child_peak_rss_kib_this_invocation": 93736,
+    "stdout": "{\n  \"candidate_designs\": 128,\n  \"best_cost_by_error_bound\": [\n    8,\n    6\n  ],\n  \"cpu_seconds\": 0.0034672439999999805,\n  \"wall_seconds\": 0.003470827000001009,\n  \"peak_rss_kib\": 93608\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B05",
+    "child_cpu_seconds": 0.5063639999999999,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5086349700000028,
+    "child_peak_rss_kib_this_invocation": 93868,
+    "stdout": "{\n  \"case\": \"B05\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 128,\n  \"plane_minimality_certificates\": 130,\n  \"bounded_cover_nodes\": 223,\n  \"frontier\": [\n    [\n      0,\n      8\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"cpu_seconds\": 0.008323614000000035,\n  \"wall_seconds\": 0.008324152999875878,\n  \"peak_rss_kib\": 93740\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B06",
+    "child_cpu_seconds": 0.5182740000000002,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5202948890000698,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"candidate_designs\": 1280,\n  \"best_cost_by_error_bound\": [\n    9,\n    6\n  ],\n  \"cpu_seconds\": 0.009840618999999995,\n  \"wall_seconds\": 0.00984461600000941,\n  \"peak_rss_kib\": 93868\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B06",
+    "child_cpu_seconds": 0.5179159999999996,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5200448769999184,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"case\": \"B06\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 1280,\n  \"plane_minimality_certificates\": 260,\n  \"bounded_cover_nodes\": 411,\n  \"frontier\": [\n    [\n      0,\n      9\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"cpu_seconds\": 0.017227289000000034,\n  \"wall_seconds\": 0.017226545000085025,\n  \"peak_rss_kib\": 93864\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B07",
+    "child_cpu_seconds": 0.49566599999999983,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.4980309140000827,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"candidate_designs\": 8,\n  \"best_cost_by_error_bound\": [\n    null,\n    5\n  ],\n  \"cpu_seconds\": 0.0002961699999999845,\n  \"wall_seconds\": 0.0002994559999933699,\n  \"peak_rss_kib\": 93356\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B07",
+    "child_cpu_seconds": 0.5088700000000003,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5112226070000361,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"case\": \"B07\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 8,\n  \"plane_minimality_certificates\": 10,\n  \"bounded_cover_nodes\": 10,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.00044960799999999024,\n  \"wall_seconds\": 0.0004489990001275146,\n  \"peak_rss_kib\": 93480\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-B08",
+    "child_cpu_seconds": 0.5587460000000004,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "B08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5607460520000132,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"candidate_designs\": 384,\n  \"best_cost_by_error_bound\": [\n    null,\n    7\n  ],\n  \"cpu_seconds\": 0.00583508399999999,\n  \"wall_seconds\": 0.005838911999944685,\n  \"peak_rss_kib\": 93736\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-B08",
+    "child_cpu_seconds": 0.5641419999999996,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "B08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5675669380000272,
+    "child_peak_rss_kib_this_invocation": 93996,
+    "stdout": "{\n  \"case\": \"B08\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 384,\n  \"plane_minimality_certificates\": 198,\n  \"bounded_cover_nodes\": 290,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.01414711099999999,\n  \"wall_seconds\": 0.014147554000146556,\n  \"peak_rss_kib\": 93860\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T01",
+    "child_cpu_seconds": 0.5942909999999999,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5964538170001106,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"candidate_designs\": 12,\n  \"best_cost_by_error_bound\": [\n    null,\n    5\n  ],\n  \"cpu_seconds\": 0.0003471560000000151,\n  \"wall_seconds\": 0.00035021700000470446,\n  \"peak_rss_kib\": 93352\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T01",
+    "child_cpu_seconds": 0.556394,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.558218689000114,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"case\": \"T01\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 12,\n  \"plane_minimality_certificates\": 12,\n  \"bounded_cover_nodes\": 12,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.00047834099999999324,\n  \"wall_seconds\": 0.0004776499999934458,\n  \"peak_rss_kib\": 93476\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T02",
+    "child_cpu_seconds": 2.3517150000000004,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 2.356142172999853,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"candidate_designs\": 24576,\n  \"best_cost_by_error_bound\": [\n    null,\n    null,\n    12\n  ],\n  \"cpu_seconds\": 1.674064026,\n  \"wall_seconds\": 1.6760945910000373,\n  \"peak_rss_kib\": 134048\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T02",
+    "child_cpu_seconds": 5.079463999999999,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 5.081665091000104,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"case\": \"T02\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 24576,\n  \"plane_minimality_certificates\": 24600,\n  \"bounded_cover_nodes\": 222519,\n  \"frontier\": [\n    [\n      2,\n      12\n    ]\n  ],\n  \"cpu_seconds\": 4.5033504660000006,\n  \"wall_seconds\": 4.5039006510000945,\n  \"peak_rss_kib\": 146348\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T03",
+    "child_cpu_seconds": 0.5968010000000008,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5995638480001162,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"candidate_designs\": 768,\n  \"best_cost_by_error_bound\": [\n    null,\n    7\n  ],\n  \"cpu_seconds\": 0.018935378000000003,\n  \"wall_seconds\": 0.018939926000030027,\n  \"peak_rss_kib\": 93992\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T03",
+    "child_cpu_seconds": 0.5977080000000005,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6006242429998565,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"case\": \"T03\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 768,\n  \"plane_minimality_certificates\": 390,\n  \"bounded_cover_nodes\": 831,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.049251104000000046,\n  \"wall_seconds\": 0.04936476300008508,\n  \"peak_rss_kib\": 94124\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T04",
+    "child_cpu_seconds": 0.5902710000000001,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5924853559999974,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"candidate_designs\": 256,\n  \"best_cost_by_error_bound\": [\n    null,\n    7\n  ],\n  \"cpu_seconds\": 0.015048620000000013,\n  \"wall_seconds\": 0.015054130999942572,\n  \"peak_rss_kib\": 93868\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T04",
+    "child_cpu_seconds": 0.550018,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5526603250000335,
+    "child_peak_rss_kib_this_invocation": 152096,
+    "stdout": "{\n  \"case\": \"T04\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 256,\n  \"plane_minimality_certificates\": 258,\n  \"bounded_cover_nodes\": 565,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.02892397699999999,\n  \"wall_seconds\": 0.028924330999871017,\n  \"peak_rss_kib\": 93992\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T05",
+    "child_cpu_seconds": 0.503257,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5060759680000047,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"candidate_designs\": 4,\n  \"best_cost_by_error_bound\": [\n    null,\n    5\n  ],\n  \"cpu_seconds\": 0.0002124259999999878,\n  \"wall_seconds\": 0.0002156669997930294,\n  \"peak_rss_kib\": 93480\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T05",
+    "child_cpu_seconds": 0.5122540000000001,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5141588839999258,
+    "child_peak_rss_kib_this_invocation": 93608,
+    "stdout": "{\n  \"case\": \"T05\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 4,\n  \"plane_minimality_certificates\": 6,\n  \"bounded_cover_nodes\": 6,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.00036441199999998064,\n  \"wall_seconds\": 0.00036371800001688825,\n  \"peak_rss_kib\": 93480\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T06",
+    "child_cpu_seconds": 0.5650859999999999,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5674397770001178,
+    "child_peak_rss_kib_this_invocation": 93976,
+    "stdout": "{\n  \"candidate_designs\": 256,\n  \"best_cost_by_error_bound\": [\n    null,\n    7\n  ],\n  \"cpu_seconds\": 0.011269543000000048,\n  \"wall_seconds\": 0.011274913000079323,\n  \"peak_rss_kib\": 93848\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T06",
+    "child_cpu_seconds": 0.5358450000000003,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5383166110000275,
+    "child_peak_rss_kib_this_invocation": 94140,
+    "stdout": "{\n  \"case\": \"T06\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 256,\n  \"plane_minimality_certificates\": 258,\n  \"bounded_cover_nodes\": 536,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.029323169999999954,\n  \"wall_seconds\": 0.029323486999828674,\n  \"peak_rss_kib\": 94012\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T07",
+    "child_cpu_seconds": 0.5407270000000001,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5424131140000554,
+    "child_peak_rss_kib_this_invocation": 94376,
+    "stdout": "{\n  \"candidate_designs\": 1536,\n  \"best_cost_by_error_bound\": [\n    null,\n    8\n  ],\n  \"cpu_seconds\": 0.02718718400000003,\n  \"wall_seconds\": 0.027193151999881593,\n  \"peak_rss_kib\": 94120\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T07",
+    "child_cpu_seconds": 0.5570259999999996,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5586333280000417,
+    "child_peak_rss_kib_this_invocation": 94376,
+    "stdout": "{\n  \"case\": \"T07\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 1536,\n  \"plane_minimality_certificates\": 460,\n  \"bounded_cover_nodes\": 970,\n  \"frontier\": [\n    [\n      1,\n      8\n    ]\n  ],\n  \"cpu_seconds\": 0.05575028600000004,\n  \"wall_seconds\": 0.055758137999873725,\n  \"peak_rss_kib\": 94244\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "generate-T08",
+    "child_cpu_seconds": 0.550406,
+    "command": [
+      "python",
+      "src/synthesis.py",
+      "--case",
+      "T08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5533528030000525,
+    "child_peak_rss_kib_this_invocation": 94376,
+    "stdout": "{\n  \"candidate_designs\": 768,\n  \"best_cost_by_error_bound\": [\n    null,\n    7\n  ],\n  \"cpu_seconds\": 0.02005319900000002,\n  \"wall_seconds\": 0.02077419500005817,\n  \"peak_rss_kib\": 94028\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "check-T08",
+    "child_cpu_seconds": 0.5862680000000006,
+    "command": [
+      "python",
+      "src/checker.py",
+      "--case",
+      "T08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5884342629999537,
+    "child_peak_rss_kib_this_invocation": 94376,
+    "stdout": "{\n  \"case\": \"T08\",\n  \"accepted\": true,\n  \"candidate_designs_replayed\": 768,\n  \"plane_minimality_certificates\": 390,\n  \"bounded_cover_nodes\": 809,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.04790991,\n  \"wall_seconds\": 0.047911373000033564,\n  \"peak_rss_kib\": 94120\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "semantic-projection",
+    "child_cpu_seconds": 0.533477,
+    "command": [
+      "python",
+      "src/semantic_projection.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5356657830000131,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "16 cases, 444 encoder-bound profiles\n",
+    "stderr": ""
+  },
+  {
+    "stage": "projection-check",
+    "child_cpu_seconds": 0.53098,
+    "command": [
+      "python",
+      "src/projection_check.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5332460120000633,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "Accepted 444 profiles; all semantic counts match exhaustive histograms.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "projection-controls",
+    "child_cpu_seconds": 0.5570759999999999,
+    "command": [
+      "python",
+      "tests/projection_controls.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5593111179998687,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "6 semantic controls passed.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B01",
+    "child_cpu_seconds": 0.5638170000000002,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.566940096000053,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "{\n  \"case\": \"B01\",\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"encoders\": 12,\n  \"encoder_plane_certificates\": 12,\n  \"decoder_relation_certificates\": 12,\n  \"lower_bound_proof_search_nodes\": 60,\n  \"satisfying_witness_search_nodes\": 141,\n  \"earlier_unsat_search_nodes\": 6,\n  \"all_generation_search_nodes\": 207,\n  \"stored_proof_tree_records\": 42,\n  \"cpu_seconds\": 0.010690581000000032,\n  \"wall_seconds\": 0.010694499999999607\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B01",
+    "child_cpu_seconds": 0.550929,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5532158169999093,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "{\n  \"case\": \"B01\",\n  \"accepted\": true,\n  \"encoders\": 12,\n  \"semantic_rejections\": 12,\n  \"relation_references\": 12,\n  \"encoder_plane_certificates\": 12,\n  \"decoder_relation_certificates\": 12,\n  \"proof_node_visits\": 60,\n  \"conflict_leaf_visits\": 42,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.005632232000000015,\n  \"wall_seconds\": 0.005636068999820054,\n  \"peak_rss_kib\": 94500\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B02",
+    "child_cpu_seconds": 2.7988320000000004,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 2.8020233950001057,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "{\n  \"case\": \"B02\",\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"encoders\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 48,\n  \"lower_bound_proof_search_nodes\": 5796,\n  \"satisfying_witness_search_nodes\": 9614,\n  \"earlier_unsat_search_nodes\": 492,\n  \"all_generation_search_nodes\": 15902,\n  \"stored_proof_tree_records\": 2934,\n  \"cpu_seconds\": 2.258379729,\n  \"wall_seconds\": 2.2587635929999124\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B02",
+    "child_cpu_seconds": 1.032717,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.0354733190001753,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "{\n  \"case\": \"B02\",\n  \"accepted\": true,\n  \"encoders\": 24,\n  \"semantic_rejections\": 24,\n  \"relation_references\": 48,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 48,\n  \"proof_node_visits\": 5796,\n  \"conflict_leaf_visits\": 2934,\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.525649207,\n  \"wall_seconds\": 0.5256813280000188,\n  \"peak_rss_kib\": 95400\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B03",
+    "child_cpu_seconds": 2.0548260000000003,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 2.0564910240000245,
+    "child_peak_rss_kib_this_invocation": 96548,
+    "stdout": "{\n  \"case\": \"B03\",\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"encoders\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 32,\n  \"lower_bound_proof_search_nodes\": 6612,\n  \"satisfying_witness_search_nodes\": 3392,\n  \"earlier_unsat_search_nodes\": 1364,\n  \"all_generation_search_nodes\": 11368,\n  \"stored_proof_tree_records\": 3334,\n  \"cpu_seconds\": 1.545945656,\n  \"wall_seconds\": 1.5460724930001106\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B03",
+    "child_cpu_seconds": 1.282665,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.286054045000128,
+    "child_peak_rss_kib_this_invocation": 95536,
+    "stdout": "{\n  \"case\": \"B03\",\n  \"accepted\": true,\n  \"encoders\": 24,\n  \"semantic_rejections\": 40,\n  \"relation_references\": 32,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 32,\n  \"proof_node_visits\": 6612,\n  \"conflict_leaf_visits\": 3334,\n  \"frontier\": [\n    [\n      1,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.754808242,\n  \"wall_seconds\": 0.7552863270000216,\n  \"peak_rss_kib\": 95408\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B04",
+    "child_cpu_seconds": 1.9157169999999997,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.9177341299998716,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B04\",\n  \"frontier\": [\n    [\n      2,\n      10\n    ]\n  ],\n  \"encoders\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 24,\n  \"lower_bound_proof_search_nodes\": 6872,\n  \"satisfying_witness_search_nodes\": 1809,\n  \"earlier_unsat_search_nodes\": 1470,\n  \"all_generation_search_nodes\": 10151,\n  \"stored_proof_tree_records\": 3460,\n  \"cpu_seconds\": 1.379683847,\n  \"wall_seconds\": 1.3798765369999728\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B04",
+    "child_cpu_seconds": 1.3592019999999996,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.3616532259998166,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B04\",\n  \"accepted\": true,\n  \"encoders\": 24,\n  \"semantic_rejections\": 48,\n  \"relation_references\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 24,\n  \"proof_node_visits\": 6872,\n  \"conflict_leaf_visits\": 3460,\n  \"frontier\": [\n    [\n      2,\n      10\n    ]\n  ],\n  \"cpu_seconds\": 0.821435288,\n  \"wall_seconds\": 0.8219017100000201,\n  \"peak_rss_kib\": 95360\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B05",
+    "child_cpu_seconds": 0.5370430000000002,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5385699299999942,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B05\",\n  \"frontier\": [\n    [\n      0,\n      8\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"encoders\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 4,\n  \"lower_bound_proof_search_nodes\": 20,\n  \"satisfying_witness_search_nodes\": 63,\n  \"earlier_unsat_search_nodes\": 8,\n  \"all_generation_search_nodes\": 91,\n  \"stored_proof_tree_records\": 13,\n  \"cpu_seconds\": 0.023033460000000006,\n  \"wall_seconds\": 0.02303849000008995\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B05",
+    "child_cpu_seconds": 0.5436639999999995,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5456448590000491,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B05\",\n  \"accepted\": true,\n  \"encoders\": 2,\n  \"semantic_rejections\": 0,\n  \"relation_references\": 4,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 4,\n  \"proof_node_visits\": 20,\n  \"conflict_leaf_visits\": 13,\n  \"frontier\": [\n    [\n      0,\n      8\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"cpu_seconds\": 0.008942233000000022,\n  \"wall_seconds\": 0.008946763000039937,\n  \"peak_rss_kib\": 94500\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B06",
+    "child_cpu_seconds": 0.5923579999999999,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5939664299999095,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B06\",\n  \"frontier\": [\n    [\n      0,\n      9\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"encoders\": 20,\n  \"encoder_plane_certificates\": 20,\n  \"decoder_relation_certificates\": 22,\n  \"lower_bound_proof_search_nodes\": 176,\n  \"satisfying_witness_search_nodes\": 514,\n  \"earlier_unsat_search_nodes\": 20,\n  \"all_generation_search_nodes\": 710,\n  \"stored_proof_tree_records\": 109,\n  \"cpu_seconds\": 0.08552571800000003,\n  \"wall_seconds\": 0.08553134599992518\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B06",
+    "child_cpu_seconds": 0.5591670000000001,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5613950560000376,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B06\",\n  \"accepted\": true,\n  \"encoders\": 20,\n  \"semantic_rejections\": 18,\n  \"relation_references\": 22,\n  \"encoder_plane_certificates\": 20,\n  \"decoder_relation_certificates\": 22,\n  \"proof_node_visits\": 176,\n  \"conflict_leaf_visits\": 109,\n  \"frontier\": [\n    [\n      0,\n      9\n    ],\n    [\n      1,\n      6\n    ]\n  ],\n  \"cpu_seconds\": 0.02914244100000002,\n  \"wall_seconds\": 0.02914849199987657,\n  \"peak_rss_kib\": 94760\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B07",
+    "child_cpu_seconds": 0.5334100000000004,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5360369980000996,
+    "child_peak_rss_kib_this_invocation": 95660,
+    "stdout": "{\n  \"case\": \"B07\",\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"encoders\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"lower_bound_proof_search_nodes\": 4,\n  \"satisfying_witness_search_nodes\": 22,\n  \"earlier_unsat_search_nodes\": 0,\n  \"all_generation_search_nodes\": 26,\n  \"stored_proof_tree_records\": 4,\n  \"cpu_seconds\": 0.0018029299999999804,\n  \"wall_seconds\": 0.0018065080000724265\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B07",
+    "child_cpu_seconds": 0.61821,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6205311730000176,
+    "child_peak_rss_kib_this_invocation": 94632,
+    "stdout": "{\n  \"case\": \"B07\",\n  \"accepted\": true,\n  \"encoders\": 2,\n  \"semantic_rejections\": 2,\n  \"relation_references\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"proof_node_visits\": 4,\n  \"conflict_leaf_visits\": 4,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.0015343710000000343,\n  \"wall_seconds\": 0.0015382340000087424,\n  \"peak_rss_kib\": 94504\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-B08",
+    "child_cpu_seconds": 0.5819599999999999,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "B08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5841845289999128,
+    "child_peak_rss_kib_this_invocation": 94636,
+    "stdout": "{\n  \"case\": \"B08\",\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"encoders\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"lower_bound_proof_search_nodes\": 72,\n  \"satisfying_witness_search_nodes\": 158,\n  \"earlier_unsat_search_nodes\": 6,\n  \"all_generation_search_nodes\": 236,\n  \"stored_proof_tree_records\": 42,\n  \"cpu_seconds\": 0.02180544499999998,\n  \"wall_seconds\": 0.021810129000186862\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-B08",
+    "child_cpu_seconds": 0.5540890000000003,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "B08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5561574550001751,
+    "child_peak_rss_kib_this_invocation": 94636,
+    "stdout": "{\n  \"case\": \"B08\",\n  \"accepted\": true,\n  \"encoders\": 6,\n  \"semantic_rejections\": 6,\n  \"relation_references\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"proof_node_visits\": 72,\n  \"conflict_leaf_visits\": 42,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.007454601000000005,\n  \"wall_seconds\": 0.007458654000174647,\n  \"peak_rss_kib\": 94504\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T01",
+    "child_cpu_seconds": 0.5587100000000002,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.560786883999981,
+    "child_peak_rss_kib_this_invocation": 94636,
+    "stdout": "{\n  \"case\": \"T01\",\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"encoders\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"lower_bound_proof_search_nodes\": 24,\n  \"satisfying_witness_search_nodes\": 66,\n  \"earlier_unsat_search_nodes\": 2,\n  \"all_generation_search_nodes\": 92,\n  \"stored_proof_tree_records\": 18,\n  \"cpu_seconds\": 0.004962797000000019,\n  \"wall_seconds\": 0.0049664929999835294\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T01",
+    "child_cpu_seconds": 0.6351589999999998,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6372142220000114,
+    "child_peak_rss_kib_this_invocation": 94636,
+    "stdout": "{\n  \"case\": \"T01\",\n  \"accepted\": true,\n  \"encoders\": 6,\n  \"semantic_rejections\": 6,\n  \"relation_references\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"proof_node_visits\": 24,\n  \"conflict_leaf_visits\": 18,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.002952408999999989,\n  \"wall_seconds\": 0.002956314999892129,\n  \"peak_rss_kib\": 94500\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T02",
+    "child_cpu_seconds": 19.730998,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 19.735616286999857,
+    "child_peak_rss_kib_this_invocation": 100264,
+    "stdout": "{\n  \"case\": \"T02\",\n  \"frontier\": [\n    [\n      2,\n      12\n    ]\n  ],\n  \"encoders\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 24,\n  \"lower_bound_proof_search_nodes\": 68680,\n  \"satisfying_witness_search_nodes\": 4357,\n  \"earlier_unsat_search_nodes\": 8452,\n  \"all_generation_search_nodes\": 81489,\n  \"stored_proof_tree_records\": 34364,\n  \"cpu_seconds\": 19.111927292,\n  \"wall_seconds\": 19.11482078500012\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T02",
+    "child_cpu_seconds": 14.884633000000003,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T02"
+    ],
+    "returncode": 0,
+    "wall_seconds": 14.887374392000083,
+    "child_peak_rss_kib_this_invocation": 100264,
+    "stdout": "{\n  \"case\": \"T02\",\n  \"accepted\": true,\n  \"encoders\": 24,\n  \"semantic_rejections\": 48,\n  \"relation_references\": 24,\n  \"encoder_plane_certificates\": 24,\n  \"decoder_relation_certificates\": 24,\n  \"proof_node_visits\": 68680,\n  \"conflict_leaf_visits\": 34364,\n  \"frontier\": [\n    [\n      2,\n      12\n    ]\n  ],\n  \"cpu_seconds\": 14.351474675,\n  \"wall_seconds\": 14.352733951000118,\n  \"peak_rss_kib\": 99880\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T03",
+    "child_cpu_seconds": 0.6509409999999985,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6523282979999294,
+    "child_peak_rss_kib_this_invocation": 100264,
+    "stdout": "{\n  \"case\": \"T03\",\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"encoders\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"lower_bound_proof_search_nodes\": 48,\n  \"satisfying_witness_search_nodes\": 326,\n  \"earlier_unsat_search_nodes\": 2,\n  \"all_generation_search_nodes\": 376,\n  \"stored_proof_tree_records\": 30,\n  \"cpu_seconds\": 0.090164784,\n  \"wall_seconds\": 0.09017115799997555\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T03",
+    "child_cpu_seconds": 0.522682,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T03"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5248114139999416,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T03\",\n  \"accepted\": true,\n  \"encoders\": 6,\n  \"semantic_rejections\": 6,\n  \"relation_references\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"proof_node_visits\": 48,\n  \"conflict_leaf_visits\": 30,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.014527015000000032,\n  \"wall_seconds\": 0.014531869000165898,\n  \"peak_rss_kib\": 94632\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T04",
+    "child_cpu_seconds": 0.551027,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.554090209999913,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T04\",\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"encoders\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"lower_bound_proof_search_nodes\": 4,\n  \"satisfying_witness_search_nodes\": 114,\n  \"earlier_unsat_search_nodes\": 0,\n  \"all_generation_search_nodes\": 118,\n  \"stored_proof_tree_records\": 4,\n  \"cpu_seconds\": 0.03075159300000002,\n  \"wall_seconds\": 0.030756154999835417\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T04",
+    "child_cpu_seconds": 0.594803,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T04"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5964170449999529,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T04\",\n  \"accepted\": true,\n  \"encoders\": 2,\n  \"semantic_rejections\": 2,\n  \"relation_references\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"proof_node_visits\": 4,\n  \"conflict_leaf_visits\": 4,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.004999171999999996,\n  \"wall_seconds\": 0.005002771000135908,\n  \"peak_rss_kib\": 94500\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T05",
+    "child_cpu_seconds": 0.5338990000000001,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5359278549999544,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T05\",\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"encoders\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"lower_bound_proof_search_nodes\": 4,\n  \"satisfying_witness_search_nodes\": 22,\n  \"earlier_unsat_search_nodes\": 0,\n  \"all_generation_search_nodes\": 26,\n  \"stored_proof_tree_records\": 4,\n  \"cpu_seconds\": 0.0017096920000000404,\n  \"wall_seconds\": 0.001712838000003103\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T05",
+    "child_cpu_seconds": 0.5362089999999995,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T05"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5380295370000567,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T05\",\n  \"accepted\": true,\n  \"encoders\": 2,\n  \"semantic_rejections\": 2,\n  \"relation_references\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"proof_node_visits\": 4,\n  \"conflict_leaf_visits\": 4,\n  \"frontier\": [\n    [\n      1,\n      5\n    ]\n  ],\n  \"cpu_seconds\": 0.0011157489999999992,\n  \"wall_seconds\": 0.0011192950000804558,\n  \"peak_rss_kib\": 94504\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T06",
+    "child_cpu_seconds": 0.5477520000000002,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5494087399999898,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T06\",\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"encoders\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"lower_bound_proof_search_nodes\": 4,\n  \"satisfying_witness_search_nodes\": 59,\n  \"earlier_unsat_search_nodes\": 0,\n  \"all_generation_search_nodes\": 63,\n  \"stored_proof_tree_records\": 4,\n  \"cpu_seconds\": 0.022157287000000025,\n  \"wall_seconds\": 0.022160987999995996\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T06",
+    "child_cpu_seconds": 0.533127,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T06"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5348280709999926,
+    "child_peak_rss_kib_this_invocation": 94760,
+    "stdout": "{\n  \"case\": \"T06\",\n  \"accepted\": true,\n  \"encoders\": 2,\n  \"semantic_rejections\": 2,\n  \"relation_references\": 2,\n  \"encoder_plane_certificates\": 2,\n  \"decoder_relation_certificates\": 2,\n  \"proof_node_visits\": 4,\n  \"conflict_leaf_visits\": 4,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.00474322100000002,\n  \"wall_seconds\": 0.0047472879998622375,\n  \"peak_rss_kib\": 94504\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T07",
+    "child_cpu_seconds": 0.7037059999999998,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.7052715580000495,
+    "child_peak_rss_kib_this_invocation": 94888,
+    "stdout": "{\n  \"case\": \"T07\",\n  \"frontier\": [\n    [\n      1,\n      8\n    ]\n  ],\n  \"encoders\": 12,\n  \"encoder_plane_certificates\": 12,\n  \"decoder_relation_certificates\": 12,\n  \"lower_bound_proof_search_nodes\": 240,\n  \"satisfying_witness_search_nodes\": 619,\n  \"earlier_unsat_search_nodes\": 12,\n  \"all_generation_search_nodes\": 871,\n  \"stored_proof_tree_records\": 132,\n  \"cpu_seconds\": 0.176078878,\n  \"wall_seconds\": 0.1760865339999782\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T07",
+    "child_cpu_seconds": 0.5671999999999999,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T07"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5693896310001492,
+    "child_peak_rss_kib_this_invocation": 94888,
+    "stdout": "{\n  \"case\": \"T07\",\n  \"accepted\": true,\n  \"encoders\": 12,\n  \"semantic_rejections\": 12,\n  \"relation_references\": 12,\n  \"encoder_plane_certificates\": 12,\n  \"decoder_relation_certificates\": 12,\n  \"proof_node_visits\": 240,\n  \"conflict_leaf_visits\": 132,\n  \"frontier\": [\n    [\n      1,\n      8\n    ]\n  ],\n  \"cpu_seconds\": 0.03576005900000001,\n  \"wall_seconds\": 0.035776398999814774,\n  \"peak_rss_kib\": 94760\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-generate-T08",
+    "child_cpu_seconds": 0.601272,
+    "command": [
+      "python",
+      "src/frontier_proofs.py",
+      "--case",
+      "T08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6029696920002152,
+    "child_peak_rss_kib_this_invocation": 94888,
+    "stdout": "{\n  \"case\": \"T08\",\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"encoders\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"lower_bound_proof_search_nodes\": 48,\n  \"satisfying_witness_search_nodes\": 196,\n  \"earlier_unsat_search_nodes\": 2,\n  \"all_generation_search_nodes\": 246,\n  \"stored_proof_tree_records\": 30,\n  \"cpu_seconds\": 0.069574635,\n  \"wall_seconds\": 0.06958016600015071\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-check-T08",
+    "child_cpu_seconds": 0.5663400000000001,
+    "command": [
+      "python",
+      "src/frontier_proof_check.py",
+      "--case",
+      "T08"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5679081650000626,
+    "child_peak_rss_kib_this_invocation": 94888,
+    "stdout": "{\n  \"case\": \"T08\",\n  \"accepted\": true,\n  \"encoders\": 6,\n  \"semantic_rejections\": 6,\n  \"relation_references\": 6,\n  \"encoder_plane_certificates\": 6,\n  \"decoder_relation_certificates\": 6,\n  \"proof_node_visits\": 48,\n  \"conflict_leaf_visits\": 30,\n  \"frontier\": [\n    [\n      1,\n      7\n    ]\n  ],\n  \"cpu_seconds\": 0.015216238999999965,\n  \"wall_seconds\": 0.015222020000010161,\n  \"peak_rss_kib\": 94632\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-controls",
+    "child_cpu_seconds": 0.567,
+    "command": [
+      "python",
+      "tests/frontier_proof_controls.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5684439819999625,
+    "child_peak_rss_kib_this_invocation": 94888,
+    "stdout": "{\n  \"controls\": [\n    {\n      \"name\": \"omit-one-encoder\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: certificate does not cover all injective encoders\"\n    },\n    {\n      \"name\": \"replace-proof-root-by-conflict-leaf\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: leaf without a unit conflict\"\n    },\n    {\n      \"name\": \"branch-outside-cnf\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: invalid branch variable\"\n    },\n    {\n      \"name\": \"understate-product-minimum\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: attaining circuit has wrong product count\"\n    },\n    {\n      \"name\": \"flip-attaining-circuit-mask\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: invalid connection mask\"\n    },\n    {\n      \"name\": \"remove-semantic-core-source\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: bad obstruction core\"\n    },\n    {\n      \"name\": \"alter-decoder-relation\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: SAT CNF statistics mismatch\"\n    },\n    {\n      \"name\": \"drop-frontier-point\",\n      \"passed\": true,\n      \"rejection\": \"ValueError: frontier witness list mismatch\"\n    }\n  ],\n  \"passed\": 8,\n  \"cpu_seconds\": 0.03655051300000001,\n  \"peak_rss_kib\": 93104\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "proof-summary",
+    "child_cpu_seconds": 0.5912860000000003,
+    "command": [
+      "python",
+      "src/proof_summary.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5930582680000498,
+    "child_peak_rss_kib_this_invocation": 100272,
+    "stdout": "{\n  \"accepted\": true,\n  \"cases\": 16,\n  \"encoders_covered\": 174,\n  \"encoder_plane_certificates\": 174,\n  \"decoder_relation_certificates\": 210,\n  \"semantic_infeasible_profiles\": 234,\n  \"feasible_encoder_bound_relations\": 210,\n  \"lower_bound_proof_search_nodes\": 88664,\n  \"satisfying_witness_search_nodes\": 21472,\n  \"earlier_unsat_search_nodes\": 11836,\n  \"all_generation_search_nodes\": 121972,\n  \"stored_proof_tree_records\": 44524,\n  \"lower_bound_proof_replay_node_visits\": 88664,\n  \"proof_checker_conflict_leaf_visits\": 44524,\n  \"frontier_points\": 18,\n  \"generation_cpu_seconds\": 24.834194324000002,\n  \"generation_wall_seconds_sum\": 24.837848713000312,\n  \"checking_cpu_seconds\": 16.585387154,\n  \"checking_wall_seconds_sum\": 16.58768748500006,\n  \"certificate_bytes\": 876367,\n  \"mutation_controls_passed\": 8,\n  \"scope\": \"Exact finite grammar and locked cases only. The 88,664 replay visits are the final one-fewer-product lower-bound trees; total producer DPLL search also includes earlier unsatisfiable bounds and satisfying witness searches.\",\n  \"aggregation_cpu_seconds\": 0.016245620000000016,\n  \"peak_rss_kib\": 100272\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "fixed-generate-X01",
+    "child_cpu_seconds": 0.55724,
+    "command": [
+      "python",
+      "src/fixed_codebook_proof.py",
+      "--case",
+      "X01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.558785885999896,
+    "child_peak_rss_kib_this_invocation": 100272,
+    "stdout": "{\n  \"case\": \"X01\",\n  \"frontier\": [\n    [\n      1,\n      20\n    ],\n    [\n      2,\n      18\n    ]\n  ],\n  \"decoder_completion_count_power_of_two\": 72,\n  \"cpu_seconds\": 0.015025805999999975,\n  \"wall_seconds\": 0.015030451000029643\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "fixed-check-X01",
+    "child_cpu_seconds": 0.5408719999999998,
+    "command": [
+      "python",
+      "src/fixed_codebook_check.py",
+      "--case",
+      "X01"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5424876419999691,
+    "child_peak_rss_kib_this_invocation": 100272,
+    "stdout": "{\n  \"accepted\": true,\n  \"case\": \"X01\",\n  \"planes_checked\": 4,\n  \"plane_domain_bindings_checked\": 4,\n  \"cubes_checked\": 756,\n  \"packing_pairs_checked\": 37,\n  \"decoder_semantic_rows_rechecked\": 96,\n  \"decoder_inverse_rows_rechecked\": 24,\n  \"decoder_source_received_obligations_rechecked\": 144,\n  \"decoder_exact_error_by_bound\": {\n    \"1\": 1,\n    \"2\": 2,\n    \"3\": 2\n  },\n  \"frontier\": [\n    [\n      1,\n      20\n    ],\n    [\n      2,\n      18\n    ]\n  ],\n  \"checker_cpu_seconds\": 0.011971537000000032,\n  \"checker_wall_seconds\": 0.011976077000099394,\n  \"peak_rss_kib\": 93732\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "fixed-controls",
+    "child_cpu_seconds": 0.5512230000000002,
+    "command": [
+      "python",
+      "tests/fixed_codebook_controls.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5528647690000525,
+    "child_peak_rss_kib_this_invocation": 100272,
+    "stdout": "{\n  \"passed\": 9,\n  \"controls\": [\n    {\n      \"name\": \"pseudo-domain-projection-collapse\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 1 domain mismatch\",\n      \"static_witness\": {\n        \"pseudo_domain_rows_locally_legal\": 32,\n        \"true_codeword\": \"00100\",\n        \"required_message\": \"000\",\n        \"forged_output\": \"100\"\n      }\n    },\n    {\n      \"name\": \"drop-packing-cell\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 1 packing lower bound does not meet witness size\"\n    },\n    {\n      \"name\": \"duplicate-packing-cell\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 1 packing has duplicate cells\"\n    },\n    {\n      \"name\": \"mutate-circuit-cube\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 1 attaining circuit violates relation\"\n    },\n    {\n      \"name\": \"zero-output-mask\",\n      \"passed\": true,\n      \"rejection\": \"bad term mask\"\n    },\n    {\n      \"name\": \"drop-frontier-point\",\n      \"passed\": true,\n      \"rejection\": \"frontier mismatch\"\n    },\n    {\n      \"name\": \"alter-encoder-row\",\n      \"passed\": true,\n      \"rejection\": \"encoder row mapping mismatch\"\n    },\n    {\n      \"name\": \"understate-minimum\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 1 product count mismatch\"\n    },\n    {\n      \"name\": \"alter-forced-zero-set\",\n      \"passed\": true,\n      \"rejection\": \"decoder plane at error bound 2 forced-zero set mismatch\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "anchor-census",
+    "child_cpu_seconds": 0.527998,
+    "command": [
+      "python",
+      "src/anchor_census.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5303644539999368,
+    "child_peak_rss_kib_this_invocation": 93488,
+    "stdout": "{\n  \"pairwise_valid_mappings\": 96,\n  \"partial_search_nodes\": 3666,\n  \"minimum_total_decoder_error_counts\": {\n    \"2\": 96\n  },\n  \"count_agrees_with_source_text\": false\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "anchor-census-check",
+    "child_cpu_seconds": 0.5747169999999999,
+    "command": [
+      "python",
+      "src/anchor_census_check.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5764451180000378,
+    "child_peak_rss_kib_this_invocation": 93732,
+    "stdout": "{\n  \"accepted\": true,\n  \"pairwise_valid_mappings_checked\": 96,\n  \"independent_partial_search_nodes\": 1298,\n  \"logical_row_bound_slots\": 6144,\n  \"executed_row_output_calls\": 4512,\n  \"exact_total_error_two_mappings\": 96,\n  \"omitted_center_mappings\": 96,\n  \"source_reported_count\": 72,\n  \"printed_rule_count\": 96,\n  \"discrepancy_status\": \"unresolved; not labeled a source reproduction\",\n  \"cpu_seconds\": 0.03936103200000002,\n  \"wall_seconds\": 0.03936678499985646,\n  \"peak_rss_kib\": 93604\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "anchor-census-controls",
+    "child_cpu_seconds": 0.6340370000000002,
+    "command": [
+      "python",
+      "tests/anchor_census_controls.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6358074400000078,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "[\n  {\n    \"name\": \"understated-pairwise-count\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"deleted-mapping\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"duplicate-mapping\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"wrong-omitted-word\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"understated-total-error\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"wrong-obstruction-row\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"deleted-core-source\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  },\n  {\n    \"name\": \"false-source-agreement\",\n    \"passed\": true,\n    \"rejection\": \"ValueError\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "stage": "encoding-properties",
+    "child_cpu_seconds": 0.5240410000000001,
+    "command": [
+      "python",
+      "tests/encoding_properties.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.525673857999891,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "{\n  \"accepted\": true,\n  \"cardinality\": {\n    \"formulas\": 25,\n    \"assignments\": 382\n  },\n  \"relational\": {\n    \"relations\": 9,\n    \"bounds\": 36,\n    \"correlated_forbidden_tuple_checks\": 2\n  },\n  \"scope\": \"Exhaustive small-oracle tests; not a proof for arbitrary encodings.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "theory",
+    "child_cpu_seconds": 0.5496899999999999,
+    "command": [
+      "python",
+      "src/theory_checks.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5514363029999458,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "Explicit binary/ternary witnesses and four deletion checks passed.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "controls",
+    "child_cpu_seconds": 0.5317019999999999,
+    "command": [
+      "python",
+      "tests/controls.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5334333610001067,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "Eight named controls passed; six are malformed-certificate controls.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "scalarization",
+    "child_cpu_seconds": 0.5037720000000003,
+    "command": [
+      "python",
+      "src/baseline.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5053057059999446,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "Weighted scalarization missed 0 frontier points in the locked pool.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "metadata-integrity",
+    "child_cpu_seconds": 0.5191890000000001,
+    "command": [
+      "python",
+      "tests/metadata_integrity.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.5208163249999416,
+    "child_peak_rss_kib_this_invocation": 93740,
+    "stdout": "{\n  \"accepted\": true,\n  \"scholarly_references_checked\": 60,\n  \"unique_dois_checked\": 60,\n  \"primary_urls_checked\": 60,\n  \"external_resources_checked\": 67,\n  \"claim_records_checked\": 21,\n  \"scope\": \"Offline structural consistency and provenance audit; primary-source reading depth remains as recorded per row.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "stage": "orchestration-controls",
+    "child_cpu_seconds": 0.600757,
+    "command": [
+      "python",
+      "tests/orchestration.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.6053449949999958,
+    "child_peak_rss_kib_this_invocation": 97712,
+    "stdout": "stage-00 0 0.0\nstage-01 0 0.0\nstage-02 0 0.0\nstage-03 0 0.0\nstage-04 0 0.0\nstage-05 0 0.0\nstage-06 0 0.0\nstage-07 0 0.0\nstage-08 0 0.0\nstage-09 0 0.0\nstage-10 0 0.0\nstage-11 0 0.0\nstage-12 0 0.0\nstage-13 0 0.0\nstage-14 0 0.0\nstage-15 0 0.0\nstage-16 0 0.0\nstage-17 0 0.0\nstage-18 0 0.0\nstage-19 0 0.0\nstage-20 0 0.0\nstage-21 0 0.0\nstage-22 0 0.0\nstage-23 0 0.0\nstage-24 0 0.0\nstage-25 0 0.0\nstage-26 0 0.0\nstage-27 0 0.0\nstage-28 0 0.0\nstage-29 0 0.0\nstage-30 0 0.0\nstage-31 0 0.0\nstage-32 0 0.0\nstage-33 0 0.0\nstage-34 0 0.0\nstage-35 0 0.0\nstage-36 0 0.0\nstage-37 0 0.0\nstage-38 0 0.0\nstage-39 0 0.0\nstage-40 0 0.0\nstage-41 0 0.0\nstage-42 0 0.0\nstage-43 0 0.0\nstage-44 0 0.0\nstage-45 0 0.0\nstage-46 0 0.0\nstage-47 0 0.0\nstage-48 0 0.0\nstage-49 0 0.0\nstage-50 0 0.0\nstage-51 0 0.0\nstage-52 0 0.0\nstage-53 0 0.0\nstage-54 0 0.0\nstage-55 0 0.0\nstage-56 0 0.0\nstage-57 0 0.0\nstage-58 0 0.0\nstage-59 0 0.0\nstage-60 0 0.0\nstage-61 0 0.0\nstage-62 0 0.0\nstage-63 0 0.0\nstage-64 0 0.0\nstage-65 0 0.0\nstage-66 0 0.0\nstage-67 0 0.0\nstage-68 0 0.0\nstage-69 0 0.0\nstage-70 0 0.0\nstage-71 0 0.0\nstage-72 0 0.0\nstage-73 0 0.0\nstage-74 0 0.0\nstage-75 0 0.0\nstage-76 0 0.0\nstage-77 0 0.0\nstage-78 0 0.0\nstage-79 0 0.0\nstage-80 0 0.0\nonly 2 0.0\n81-stage multi-round progress, source invalidation, missing-output prefix, failure, timeout, and 3 GiB limit controls passed; no scientific child executed.\n",
+    "stderr": ""
+  }
+]
