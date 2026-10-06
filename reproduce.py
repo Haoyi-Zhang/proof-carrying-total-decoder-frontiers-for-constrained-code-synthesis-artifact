@@ -38,6 +38,13 @@ def set_child_limits() -> None:
     resource.setrlimit(resource.RLIMIT_AS, (CHILD_ADDRESS_SPACE_BYTES, CHILD_ADDRESS_SPACE_BYTES))
 
 
+def captured_text(value: str | bytes | None) -> str:
+    """TimeoutExpired may carry bytes even when run() requested text=True."""
+    if isinstance(value, bytes):
+        return value.decode('utf-8', errors='replace')
+    return value or ''
+
+
 def write_json(path: Path, value: object) -> None:
     """Replace a JSON record only after the complete new record is written."""
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -234,8 +241,8 @@ def run_stage_prefix(
                 "returncode": None,
                 "status": "timeout",
                 "wall_seconds": time.perf_counter() - started,
-                "stdout": getattr(error, "stdout", "") or "",
-                "stderr": getattr(error, "stderr", "") or "",
+                "stdout": captured_text(getattr(error, "stdout", None)),
+                "stderr": captured_text(getattr(error, "stderr", None)),
             }
             write_json(results / "commands.json", ordered_records(stages, records))
             write_json(results / "campaign.json", {

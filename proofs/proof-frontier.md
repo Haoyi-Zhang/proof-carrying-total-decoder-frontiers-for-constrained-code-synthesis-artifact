@@ -24,7 +24,7 @@ The checker reconstructs `S_y`, the pin, and the Hamming distances from the inpu
 
 Let the Boolean plane input domain be the finite set `D`.  A cube `c` is a ternary pattern over the input bits (`0`, `1`, or absent).  The plane has `o` output bits and one allowed-vector list `R_r` for every row `r in D`.  The goal is not to realize independent output-bit don't-cares: the OR of all selected products at row `r` must be one complete vector in `R_r`.
 
-For every nonempty cube `c`, output bit `j`, and row `r`, the CNF uses:
+For every cube `c` matching at least one domain row (including the constant-one empty conjunction), output bit `j`, and row `r`, the CNF uses:
 
 - `s_c`: cube `c` is selected;
 - `t_cj`: cube `c` is connected to output `j`; and
@@ -51,7 +51,7 @@ The encoding permits product sharing among outputs of one plane.  It does not pe
 
 ## 3. Unit-conflict branch certificates
 
-For the exact minimum `p`, the producer stores:
+For a positive exact minimum `p`, the producer stores:
 
 - an explicit `p`-product circuit; and
 - a branch tree showing that the CNF at `p-1` products is unsatisfiable.
@@ -71,7 +71,7 @@ If the checker accepts a branch tree at formula `F`, then `F` is unsatisfiable.
 
 ### Corollary 3 (plane minimum)
 
-An accepted `p`-product circuit plus an accepted branch tree for bound `p-1` proves that `p` is the exact minimum product count for the row relation.
+For `p>0`, an accepted `p`-product circuit plus an accepted branch tree for bound `p-1` proves that `p` is the exact minimum product count for the row relation. An accepted zero-product circuit is already minimal because product counts are nonnegative.
 
 The tree is intentionally a simple finite certificate rather than a modern clause-learning trace.  Its advantage here is a small independent checker and an exact correspondence with the emitted finite CNF; its limitation is potentially exponential size.
 
@@ -83,9 +83,9 @@ Let `M(a)` be the minimum legal counted-site cost among all enumerated encoders 
 
 ### Theorem 4 (proof-carrying frontier completeness)
 
-If all encoder assignments have either a checked obstruction or a checked exact plane minimum at every bound, then the first finite value of `M` and every later strict decrease are exactly the complete nondominated error/cost frontier of the finite specification.  Every objective box `[0,a] x [0,b]` below `M(a)` is infeasible.
+Suppose all encoder assignments have either a checked obstruction or checked exact relaxed plane minima at every bound. Whenever the summed encoder/decoder minimum cost meets the site cap, also require attaining circuits whose combined connection count meets the connection cap. Then the first finite value of `M` and every later strict decrease are exactly the complete nondominated error/cost frontier of the finite specification. Every objective box `[0,a] x [0,b]` below `M(a)` is infeasible.
 
-**Proof.**  Encoder enumeration is finite, disjoint, and exhaustive.  Lemmas 1--2 and Corollary 3 establish exact plane minima for every feasible encoder/bound relation.  Products cannot be shared across planes, so their minima add; the fixed OR charge does not depend on the chosen realization.  Therefore `M(a)` is the exact minimum cost at error bound `a`.  Since increasing `a` only enlarges the feasible set, `M` is nonincreasing.  Its first finite value is nondominated; a later strict decrease is also nondominated, while an equal value is dominated by the earlier lower-error point.  A box with `b<M(a)` contains no feasible design by definition, and a box with `b>=M(a)` contains the attaining witness.  QED.
+**Proof.** Encoder enumeration is finite, disjoint, and exhaustive. Lemmas 1--2 and Corollary 3 establish exact relaxed plane minima for every feasible encoder/bound relation. Products cannot be shared across planes, so their minima add; the fixed OR charge does not depend on the chosen realization. A summed minimum exceeding the site cap excludes that encoder/bound pair even in the relaxation. Otherwise the combined connection-legal witness attains the relaxed lower bound in the original capped grammar. Therefore `M(a)` is the exact minimum cost at error bound `a`. Since increasing `a` only enlarges the feasible set, `M` is nonincreasing. Its first finite value is nondominated; a later strict decrease is also nondominated, while an equal value is dominated by the earlier lower-error point. A box with `b<M(a)` contains no feasible design by definition, and a box with `b>=M(a)` contains the attaining witness. QED.
 
 The independent checker reconstructs every encoder, row relation, CNF, tree, circuit, objective profile, and frontier.  It then cross-checks the resulting profile against the separately implemented exhaustive function-table campaign.  The cross-check is additional evidence, not an axiom used by the proof checker to accept a tree.
 

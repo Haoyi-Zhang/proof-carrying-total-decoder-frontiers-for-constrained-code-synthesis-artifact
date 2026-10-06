@@ -18,13 +18,13 @@ The joint campaign covers 16 binary/ternary specifications and every one of thei
 
 ## Quick reproduction
 
-Run from this directory:
+Use Python 3.10 or newer on Linux/POSIX with `resource` limits and `signal.alarm` (the supplied workflow uses Ubuntu 24.04). The 81-stage subprocess driver is not a native Windows driver. Run from this directory:
 
 ```bash
 python reproduce.py
 ```
 
-The driver uses one child process at a time. Each child has a 600-second deadline and a 3 GiB address-space limit. A failed or timed-out stage marks `results/campaign.json` incomplete before stopping. Only all 81 successful stages set `complete_locked_case_replay` to `true`. The final stage checks the bibliography, source ledger, claim ledger, required files, and absence of fabricated repository placeholders.
+The driver uses one child process at a time. Each child has a 600-second deadline and a 3 GiB address-space limit. A failed or timed-out stage marks `results/campaign.json` incomplete before stopping; captured timeout output is decoded into the retained command record. Only all 81 successful stages set `complete_locked_case_replay` to `true`. The metadata stage checks the bibliography, source ledger, claim ledger, required files, and absence of fabricated repository placeholders; the final stage exercises mocked orchestration controls.
 
 A bounded, resumable run is also supported:
 
@@ -68,7 +68,7 @@ For a fixed encoder and error bound, every received word has a finite set of leg
 Each exact plane certificate contains:
 
 1. an explicit circuit attaining the claimed product count; and
-2. a complete split tree proving the CNF with one fewer product unsatisfiable, with every leaf closed by unit propagation.
+2. for a positive minimum, a complete split tree proving the CNF with one fewer product unsatisfiable, with every leaf closed by unit propagation. A zero-product circuit needs no lower proof because product counts are nonnegative.
 
 `src/frontier_proof_check.py` deliberately imports neither the producer, the exhaustive synthesizer, nor the original cost checker. It reconstructs the raw domain, cube order, legal row relation, variables, clauses, sequential counters, circuit behavior, branches, objective profile, and encoder coverage. It rejects malformed masks, altered rows, missing branches, invalid variables, cycles, unreachable records, non-conflicting leaves, and omitted encoders.
 
@@ -100,15 +100,15 @@ The full run includes:
 - 8 branch-certificate mutations;
 - 9 fixed-codebook certificate mutations, including a pseudo-domain projection forgery that the pre-fix local checker accepted;
 - 8 anchor-census mutations;
-- exhaustive small-oracle encoding tests; and
-- mocked 81-stage multi-round progress, source-change invalidation, missing-output prefix invalidation, failure, and timeout controls; and
+- exhaustive small-oracle encoding tests, including cube incidence on all 64 nonempty ordered two-bit domains and a sparse-domain two-product packing regression;
+- mocked 81-stage multi-round progress, source-change invalidation, missing-output prefix invalidation, failure, and timeout controls, including partial byte output;
 - 1 direct assertion that the documented 3 GiB child address-space bound is applied before `exec`.
 
 These controls test interfaces and failure modes; they are not additional practical workloads.
 
 ## Expected completed summary
 
-A successful `results/campaign.json` reports, among other fields:
+The retained historical host campaign used the eleven-invocation, eight-stage sequence. Its `results/campaign.json` reports, among other fields:
 
 - `completed_stages`: 81
 - `unique_command_records`: 81
@@ -141,7 +141,9 @@ A successful `results/campaign.json` reports, among other fields:
 - `anchor_executed_row_output_calls`: 4512
 - `encoding_property_assignments_checked`: 382
 
-Timing fields are observations from the current environment, not performance claims. `results/evidence-counts.json` separates logical coverage, retained proof objects, and actual execution. The value 837,040 is the number of candidate source-received obligations covered by the exhaustive designs, not a count of repeated primitive comparison calls.
+The four invocation-accounting values above describe that run, not every successful run: an unbounded invocation executes all 81 stages with `bounded_invocations=1`, `resume_invocations=0`, a zero resumed prefix, and 81 executed stages. The timing fields retained in this package are historical host observations, not new Windows timings or performance claims. A separate Windows finite-input replay rechecked all sixteen function-pair/proof frontiers and regenerated X01 and A01 with unchanged scientific results; it did not run the POSIX 81-stage subprocess driver. `results/evidence-counts.json` separates logical coverage, retained proof objects, and actual execution. Its 99,897-unit index refers to the retained host campaign and does not count the additional sparse-domain regression. The value 837,040 is the number of candidate source-received obligations covered by the exhaustive designs, not a count of repeated primitive comparison calls.
+
+The prepared `.github/workflows/scientific-checks.yml` runs the full owned finite campaign from this flat artifact root with a ten-minute whole-run deadline and 3 GiB address-space limit. It retains the command output and result records on failure as well as success. Preparing the workflow does not establish that a hosted run succeeded.
 
 ## Regenerating paper tables
 

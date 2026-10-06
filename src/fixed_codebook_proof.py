@@ -21,15 +21,15 @@ from pathlib import Path
 from frontier_proofs import channel_words, raw_word, semantic_obstruction, semantic_rows
 
 
-def cube_patterns(width: int, row_count: int) -> list[tuple[str, tuple[int, ...]]]:
-    domain = tuple(range(row_count))
+def cube_patterns(width: int, domain: tuple[int, ...]) -> list[tuple[str, tuple[int, ...]]]:
+    """Keep row indices as labels, but match cubes against Boolean values."""
     out: list[tuple[str, tuple[int, ...]]] = []
     for digits in it.product((-1, 0, 1), repeat=width):
         rows = tuple(
             row
-            for row in domain
+            for row, value in enumerate(domain)
             if all(
-                digit == -1 or digit == ((row >> (width - 1 - j)) & 1)
+                digit == -1 or digit == ((value >> (width - 1 - j)) & 1)
                 for j, digit in enumerate(digits)
             )
         )
@@ -141,7 +141,7 @@ def plane_certificate(
     if any(produced[row] not in set(legal[row]) for row in range(len(domain))):
         raise ValueError("attaining circuit violates the row relation")
     ones, zeros = forced_cells(legal, outputs)
-    cubes = cube_patterns(width, len(domain))
+    cubes = cube_patterns(width, domain)
     packing = maximum_packing(ones, zeros, cubes)
     if len(packing) != len(terms):
         raise ValueError(

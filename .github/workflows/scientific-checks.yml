@@ -1,0 +1,47 @@
+name: Scientific checks
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finite-campaign:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run the owned finite campaign from the flat artifact root
+        timeout-minutes: 12
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p scientific-raw
+          ulimit -v 3145728
+          ulimit -t 600
+          set +e
+          timeout --signal=TERM --kill-after=10s 600s python -B reproduce.py > scientific-raw/stdout.log 2> scientific-raw/stderr.log
+          result=$?
+          set -e
+          printf '%s\n' "$result" > scientific-raw/exit-code.txt
+          exit "$result"
+      - name: Retain raw output and generated certificates even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: finite-campaign-raw
+          path: |
+            scientific-raw/
+            results/
+          if-no-files-found: error
+          retention-days: 14

@@ -9,6 +9,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from frontier_proofs import CNF, build_plane_cnf
 from frontier_proof_check import Formula, plane_formula
+from fixed_codebook_proof import cube_patterns, plane_certificate
+from fixed_codebook_check import check_plane, cube_rows
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -150,10 +152,35 @@ def relation_checks() -> dict:
     return {"relations": relations, "bounds": bounds, "correlated_forbidden_tuple_checks": 2}
 
 
+def packing_domain_checks() -> dict:
+    # All 64 nonempty ordered subsets of the two-bit Boolean domain. Row
+    # labels and Boolean values coincide only for the numeric-order prefix.
+    domains = 0
+    for count in range(1, 5):
+        for domain in it.permutations(range(4), count):
+            producer = tuple(cube_patterns(2, domain))
+            checker = cube_rows(domain, 2)
+            if producer != checker:
+                raise ValueError(f'packing cube/domain mismatch: {domain}')
+            domains += 1
+    # True rows 00,01,11 with outputs 1,0,1 need two products. Relabeling
+    # them as 00,01,10 incorrectly admits one cube *0 for both forced ones.
+    domain = (0, 1, 3)
+    legal = ((1,), (0,), (1,))
+    terms = [{'cube': '00', 'outputs': 1}, {'cube': '11', 'outputs': 1}]
+    record = plane_certificate(domain, 2, 1, legal, terms)
+    check_plane(record, expected_domain=domain, expected_width=2,
+                expected_outputs=1, expected_legal=legal, label='sparse regression')
+    if record['minimum_products'] != 2 or len(record['packing']) != 2:
+        raise ValueError('sparse-domain packing is not exact')
+    return {'ordered_domains': domains, 'sparse_exact_planes': 1}
+
+
 report = {
     "accepted": True,
     "cardinality": cardinality_checks(),
     "relational": relation_checks(),
+    "packing_domains": packing_domain_checks(),
     "scope": "Exhaustive small-oracle tests; not a proof for arbitrary encodings.",
 }
 (ROOT / "results/encoding-properties.json").write_text(json.dumps(report, indent=2) + "\n")

@@ -33,16 +33,16 @@ def export(results: Path, output: Path) -> None:
                 f"{spec['id']} & {spec['q']} & {spec['n']} & {spec['k']} & $\\{{{allowed}\\}}$ \\\\"
             )
     (output / "frontier-rows.tex").write_text(
-        "\\newcommand{\\FrontierRows}{%\n" + "\n".join(frontier_rows) + "\n}\n"
+        "\\newcommand{\\FrontierRows}{%\n" + "\n".join(frontier_rows) + "\n}\n", newline="\n"
     )
     (output / "specification-rows.tex").write_text(
-        "\\newcommand{\\SpecificationRows}{%\n" + "\n".join(specification_rows) + "\n}\n"
+        "\\newcommand{\\SpecificationRows}{%\n" + "\n".join(specification_rows) + "\n}\n", newline="\n"
     )
 
     for case in ("B05", "B06"):
         data = json.loads((results / f"{case}.json").read_text())
         (figures / f"{case}.csv").write_text(
-            "error,gates\n" + "".join(f"{point['error']},{point['gates']}\n" for point in data["frontier"])
+            "error,gates\n" + "".join(f"{point['error']},{point['gates']}\n" for point in data["frontier"]), newline="\n"
         )
 
     projection = json.loads((results / "semantic-projection-check.json").read_text())
@@ -60,7 +60,7 @@ def export(results: Path, output: Path) -> None:
             + r"\\"
         )
     (output / "projection-rows.tex").write_text(
-        "\\newcommand{\\ProjectionRows}{%\n" + "\n".join(projection_rows) + "\n}\n"
+        "\\newcommand{\\ProjectionRows}{%\n" + "\n".join(projection_rows) + "\n}\n", newline="\n"
     )
 
     proof_summary = json.loads((results / "proof-frontiers" / "summary.json").read_text())
@@ -76,7 +76,7 @@ def export(results: Path, output: Path) -> None:
             f"{item['encoder_planes'] + item['decoder_relations']} & {item['lower_bound_replay_nodes']:,} \\\\"
         )
     (output / "proof-rows.tex").write_text(
-        "\\newcommand{\\ProofRows}{%\n" + "\n".join(proof_rows) + "\n}\n"
+        "\\newcommand{\\ProofRows}{%\n" + "\n".join(proof_rows) + "\n}\n", newline="\n"
     )
 
     fixed = json.loads((results / "fixed-codebook" / "X01.json").read_text())
@@ -92,7 +92,7 @@ def export(results: Path, output: Path) -> None:
         f"${frontier}$ \\\\"
     )
     (output / "fixed-codebook-row.tex").write_text(
-        "\\newcommand{\\FixedCodebookRow}{%\n" + fixed_row + "\n}\n"
+        "\\newcommand{\\FixedCodebookRow}{%\n" + fixed_row + "\n}\n", newline="\n"
     )
 
 
@@ -119,10 +119,10 @@ def export(results: Path, output: Path) -> None:
             f"{right} & {rdata['candidate_designs']:,} & ${rf}$ & {proof_by_case[right]['lower_bound_replay_nodes']:,} " + r"\\"
         )
     (output / "paired-specification-rows.tex").write_text(
-        "\\newcommand{\\PairedSpecificationRows}{%\n" + "\n".join(paired_specs) + "\n}\n"
+        "\\newcommand{\\PairedSpecificationRows}{%\n" + "\n".join(paired_specs) + "\n}\n", newline="\n"
     )
     (output / "paired-evaluation-rows.tex").write_text(
-        "\\newcommand{\\PairedEvaluationRows}{%\n" + "\n".join(paired_eval) + "\n}\n"
+        "\\newcommand{\\PairedEvaluationRows}{%\n" + "\n".join(paired_eval) + "\n}\n", newline="\n"
     )
 
     campaign = json.loads((results / "campaign.json").read_text())
@@ -180,7 +180,7 @@ def export(results: Path, output: Path) -> None:
         "EncodingRelationBounds": campaign["encoding_relation_bounds_checked"],
     }
     lines = [f"\\newcommand{{\\{name}}}{{{value:,}}}" if isinstance(value, int) else f"\\newcommand{{\\{name}}}{{{value}}}" for name, value in macros.items()]
-    (output / "result-macros.tex").write_text("\n".join(lines) + "\n")
+    (output / "result-macros.tex").write_text("\n".join(lines) + "\n", newline="\n")
     print("Exported seven table-macro files, one result-macro file, and two frontier coordinate files.")
 
 

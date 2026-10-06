@@ -125,7 +125,10 @@ def run_failure_control(timeout: bool = False) -> None:
         stages = [module.Stage('only', ('mock.py',))]
         if timeout:
             def runner(*_args, **_kwargs):
-                raise subprocess.TimeoutExpired(['mock'], module.CHILD_TIMEOUT_SECONDS)
+                raise subprocess.TimeoutExpired(
+                    ['mock'], module.CHILD_TIMEOUT_SECONDS,
+                    output=b'partial stdout\n', stderr=b'partial stderr\n',
+                )
         else:
             def runner(command, **_kwargs):
                 return subprocess.CompletedProcess(command, 2, '', 'controlled failure')
@@ -148,6 +151,14 @@ def run_failure_control(timeout: bool = False) -> None:
         report = json.loads((results / 'campaign.json').read_text())
         assert report['complete_locked_case_replay'] is False
         assert report['status'] == ('timeout' if timeout else 'failed')
+        if timeout:
+            record = json.loads((results / 'commands.json').read_text())[0]
+            assert record['stdout'] == 'partial stdout\n'
+            assert record['stderr'] == 'partial stderr\n'
+            assert record['status'] == 'timeout' and record['returncode'] is None
+            assert module.captured_text(None) == ''
+            assert module.captured_text('already text') == 'already text'
+            assert module.captured_text(b'bad\xff') == 'bad\ufffd'
 
 
 def run_limit_control() -> None:
