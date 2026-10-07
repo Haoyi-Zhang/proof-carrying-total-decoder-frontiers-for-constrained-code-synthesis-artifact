@@ -133,12 +133,22 @@ def build_plane_cnf(
     legal_outputs: tuple[tuple[int, ...], ...],
     product_bound: int,
 ) -> PlaneEncoding:
+    return _build_plane_cnf(domain, output_count, legal_outputs, product_bound,
+                            _plane_cubes(domain, width, legal_outputs))
+
+
+def _plane_cubes(domain, width, legal_outputs):
+    """Validate before incidence construction, retaining public error ordering."""
     if len(domain) != len(legal_outputs):
         raise ValueError("row count mismatch")
     if any(not row for row in legal_outputs):
         raise ValueError("empty semantic row must use a semantic obstruction")
+    return tuple(cube_patterns(width, domain))
+
+
+def _build_plane_cnf(domain, output_count, legal_outputs, product_bound, cubes):
+    """Fresh encoding at each bound; only immutable ordered incidence is reused."""
     formula = CNF()
-    cubes = tuple(cube_patterns(width, domain))
     selected = tuple(formula.variable(f"s[{c}]") for c in range(len(cubes)))
     connected = tuple(
         tuple(formula.variable(f"t[{c},{j}]") for j in range(output_count))
@@ -362,8 +372,11 @@ def solve_plane(
     lower_proof = None
     lower_stats = None
     attempts: list[dict] = []
+    cubes = None
     for bound in range(maximum_products + 1):
-        encoding = build_plane_cnf(domain, width, output_count, legal_outputs, bound)
+        if cubes is None:
+            cubes = _plane_cubes(domain, width, legal_outputs)
+        encoding = _build_plane_cnf(domain, output_count, legal_outputs, bound, cubes)
         solver = BranchDPLL(encoding)
         satisfiable, model, proof = solver.solve()
         attempts.append(

@@ -29,6 +29,7 @@ jobs:
           mkdir -p scientific-raw
           ulimit -v 3145728
           ulimit -t 600
+          timeout --signal=TERM --kill-after=10s 180s python -B tests/regression_plane_incidence.py -v > scientific-raw/incidence.log 2>&1
           set +e
           timeout --signal=TERM --kill-after=10s 600s python -B reproduce.py > scientific-raw/stdout.log 2> scientific-raw/stderr.log
           result=$?

@@ -63,6 +63,17 @@ No package installation, network access, GPU, external solver, or non-standard P
 
 ## Certificate boundary
 
+For each plane search, the producer prepares immutable ordered cube incidence
+once and reuses only that incidence between product bounds. Every CNF, counter,
+solver assignment and proof remains fresh; independent reconstruction is
+unchanged. No runtime gain is measured or claimed. The optional pure regression
+`python -B tests/regression_plane_incidence.py -v` runs explicitly in CI before
+the unchanged 81-stage campaign. It regenerates all 384 plane certificates with
+fixed test clocks, checks ordered CNFs, replays all sixteen cases, and exercises
+literal tiny domains/SOPs, refusals and the eight retained proof mutations.
+It writes no results or receipts and is not a fresh full campaign. On Windows,
+a deny-all `resource` import stub supports pure functions, not POSIX orchestration.
+
 For a fixed encoder and error bound, every received word has a finite set of legal decoded messages. An empty set yields either an inverse-pin conflict or an empty Hamming-ball intersection core. A nonempty row relation is compiled into a deterministic CNF for a bounded shared-product SOP plane.
 
 Each exact plane certificate contains:
